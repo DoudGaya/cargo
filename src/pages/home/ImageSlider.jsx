@@ -9,8 +9,8 @@ const ImageSlider = ({ slides }) => {
     return (
         <>
         <div className="">
-            <div className="">
-                
+            <div className="" >
+                ll
             </div>
         </div>
         </>
