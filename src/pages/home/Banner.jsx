@@ -1,6 +1,7 @@
 import {React, useState} from "react";
 import ImageSlider from "./ImageSlider";
 import bannerImg from '../../assets/imgs/about_image.jpg'
+import ImageCarousel from "./Carousel";
 
 const Banner = () => {
 
@@ -42,9 +43,9 @@ const Banner = () => {
 
                        </div>
                 </div>
-                <div className=" px-10 py-20 my-auto">
-                   <div className=" bg-purple-300 rounded-lg h-[300px] overflow-hidden relative z-0 w-full my-auto">
-                        <ImageSlider slides={slides} />
+                <div className=" px-10  my-auto">
+                   <div className=" rounded-lg h-[600px] overflow-hidden relative z-0 w-full my-auto">
+                        <ImageCarousel images={slides} />
                    </div>
                 </div>
             </div>
