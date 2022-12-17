@@ -49,12 +49,12 @@ export default function Testimonials() {
                             <img src={item.imagePath} alt="" srcset="" />
                         </div>
                         <div className=" flex flex-col justify-center px-3">
-                            <p className=" font-semibold text-sm">{item.username}</p>
+                            <p className=" font-semibold text-sm text-black">{item.username}</p>
                             <p className=" text-gray-800 ">{item.designation}</p>
                         </div>
                         </div>
                         <div className=" px-4 text-gray-800">
-                            <p>{item.message}</p>
+                            <p className=" text-sm ">{item.message}</p>
                         </div>
                     </div>
             </>
@@ -62,7 +62,7 @@ export default function Testimonials() {
     })
     return (
         <>
-         <div className="w-full flex flex-col bg-yellow-300 py-20 space-y-10">
+         <div className="w-full flex flex-col bg-gray-800 text-white py-20 space-y-10">
                 <div className=" w-8/12 mx-auto">
                     <h1 className=" text-3xl font-banner font-bold">What Other Agents are Saying About Us</h1>
                 </div>

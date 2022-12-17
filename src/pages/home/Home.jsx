@@ -5,6 +5,7 @@ import BecomeAgent from "./BecomeAgent";
 import Socials from "./Socials";
 import WhatWeDo from "./WhatWeDo";
 import Testimonials from "./Testimonials";
+import ShowCase from "./ShowCase";
 
 
 
@@ -15,7 +16,8 @@ const Home = () =>{
            <div className=" flex flex-col w-full justify-center mx-auto  items-center">
             <Navigation />
             <Banner />
-            <Socials />
+            {/* <Socials /> */}
+            <ShowCase />
             <Testimonials />
             <WhatWeDo />
             <BecomeAgent />

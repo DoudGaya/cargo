@@ -1,5 +1,6 @@
 import {React, useState} from "react";
 import ImageSlider from "./ImageSlider";
+import Socials from "./Socials";
 import bannerImg1 from '../../assets/imgs/banner.jpg'
 import bannerImg2 from '../../assets/imgs/banner1.jpg'
 import bannerImg3 from '../../assets/imgs/banner2.jpg'
@@ -8,6 +9,8 @@ import bannerImg5 from '../../assets/imgs/banner4.jpg'
 import bannerImg6 from '../../assets/imgs/banner5.jpg'
 import bannerImg7 from '../../assets/imgs/banner6.jpg'
 import ImageCarousel from "./Carousel";
+
+
 
 const Banner = () => {
 
@@ -48,8 +51,11 @@ const Banner = () => {
     return (
         <>
           <div className=" w-full flex">
-          <div className=" flex flex-col w-full h-[750px] mx-auto " >
+          <div className=" flex flex-col w-full h-[750px] mx-auto relative" >
                 <ImageCarousel images={slides} />
+                <div className="w-full absolute bottom-16 flex">
+                    <Socials />
+                </div>
             </div>
           </div>
         </>

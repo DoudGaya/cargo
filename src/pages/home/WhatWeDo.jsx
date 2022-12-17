@@ -7,7 +7,7 @@ import woman from "../../assets/imgs/woman.svg"
 const WhatWeDo = () => {
     return (
         <>
-                   <div className=" w-10/12 ">
+                   <div className=" w-10/12 my-10">
                 <div className=" grid grid-cols-2 gap-10 p-4">
                     <div className=" py-14 px-8 relative w-full p-4 bg-[#EBECEE] rounded-xl  flex flex-col">
                         <h2 className=" font-banner text-2xl">What We do...</h2>

@@ -31,7 +31,7 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className='w-full h-full flex flex-col bg-no-repeat bg-cover bg-center transition-all ease-in-out delay-200' style={{ backgroundImage: `url(${images[index].img})`}} >
+    <div className='w-full h-full flex flex-col bg-no-repeat bg-cover bg-center transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[index].img})`}} >
         <div className="relative bg-gradient-to-br from-stone-800/40 via-stone-600/40 to-stone-200/40 w-full flex h-full justify-between px-20">
       
         <div className="grid grid-cols-2 from-black">
