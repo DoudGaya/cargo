@@ -53,7 +53,7 @@ const Banner = () => {
           <div className=" w-full flex">
           <div className=" flex flex-col w-full h-[750px] mx-auto relative" >
                 <ImageCarousel images={slides} />
-                <div className="w-full absolute bottom-16 flex">
+                <div className="w-full absolute md:bottom-16 -bottom-6 flex">
                     <Socials />
                 </div>
             </div>

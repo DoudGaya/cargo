@@ -33,9 +33,9 @@ const socials = [
 const Socials = () => {
 
 
-    const socia = socials.map( item => {
+    const socia = socials.map(item => {
         return (
-            <div className="py-2 space-x-3 flex">
+            <div className="py-2 space-x-3 flex ">
                 <div className=" px-3 bg-orange-400 transform hover:scale-125 ease-linear duration-150 hover:border-2 hover:border-transparent delay-100 cursor-pointer flex space-x-2 items-center py-2 w-full">
                     {item.svg}
                     <p>
@@ -47,8 +47,7 @@ const Socials = () => {
     })
     return (
         <>
-
-            <div className="w-8/12 bg-white/40 py-4 grid grid-cols-4 px-10 gap-3 mx-auto">
+            <div className="w-8/12 bg-white/40 bg-sky-900 drop-shadow-lg shadow-sky-900  py-4 grid grid-cols-1 md:grid-cols-4 px-10 gap-3 mx-auto">
                 {socia}
             </div>
         </>

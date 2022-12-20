@@ -41,13 +41,13 @@ const ShowCase = () => {
 
     const singlecargo = cargoes.map( car => {
         return (
-            <div className=" flex space-x-4 border-b  py-2">
+            <div className=" flex space-x-4 border-b px-4 py-2">
             <div className=" h-[100px] w-[250px] overflow-hidden">
-            <img src={car.img} className=" object-cover h-full w-full" alt="" />
+            <img src={car.img} className=" flex-none object-cover h-full w-full" alt="" />
             </div>
             <div className=" flex flex-col  w-full px-2">
                 <p className=" uppercase font-bold font-banner text-lg text-gray-700">{car.type}</p>
-                <p className=" text-sm">{car.text}</p>
+                <p className=" text-sm ">{car.text}</p>
 
             </div>
         </div>
@@ -55,7 +55,7 @@ const ShowCase = () => {
     })
     return (
         <>
-            <div className=" grid grid-cols-3 w-full gap-8 p-20">
+            <div className=" grid grid-cols-1  md:grid-cols-3 w-full gap-8 md:px-20 py-20">
                 <div className="  flex flex-col space-y-4 px-4 ">
                         <div className=" w-full h-[300px]  overflow-hidden ">
                             <img src={smallbanner} className=" object-cover h-full w-full" alt="" />
@@ -86,7 +86,7 @@ const ShowCase = () => {
                             read more
                         </a>
                 </div>
-                <div className=" flex flex-col space-y-6">
+                <div className=" flex flex-col space-y-2 md:space-y-6">
                    {singlecargo} 
                 </div>
                 

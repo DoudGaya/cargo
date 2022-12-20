@@ -8,7 +8,7 @@ const WhatWeDo = () => {
     return (
         <>
                    <div className=" w-10/12 my-10">
-                <div className=" grid grid-cols-2 gap-10 p-4">
+                <div className=" grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
                     <div className=" py-14 px-8 relative w-full p-4 bg-[#EBECEE] rounded-xl  flex flex-col">
                         <h2 className=" font-banner text-2xl">What We do...</h2>
                         <hr className=" w-1/4 border-b-2 my-3 border-green-800" />

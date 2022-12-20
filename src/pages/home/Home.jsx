@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "./Banner";
 import Navigation from "./Navigations";
-import BecomeAgent from "./BecomeAgent";
+import Company from "./Company";
 import Socials from "./Socials";
 import WhatWeDo from "./WhatWeDo";
 import Testimonials from "./Testimonials";
@@ -18,9 +18,9 @@ const Home = () =>{
             <Banner />
             {/* <Socials /> */}
             <ShowCase />
+            <Company />
             <Testimonials />
             <WhatWeDo />
-            <BecomeAgent />
             {/* the testimonials sections */}
            
             {/* END the testimonials sections  */}

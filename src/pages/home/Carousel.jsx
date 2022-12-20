@@ -31,13 +31,12 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className='w-full h-full flex flex-col bg-no-repeat bg-cover bg-center transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[index].img})`}} >
+    <div className='w-full h-full flex bg-no-repeat bg-cover bg-center transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[index].img})`}} >
         <div className="relative bg-gradient-to-br from-stone-800/40 via-stone-600/40 to-stone-200/40 w-full flex h-full justify-between px-20">
-      
-        <div className="grid grid-cols-2 from-black">
-                <div className=" flex flex-col my-auto py-32 space-y-6 px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 from-black">
+                <div className=" flex flex-col my-auto py-32 space-y-6 md:px-10">
                        <div className=" flex flex-col space-y-6">
-                       <p className=" font-banner text-5xl leading-[4rem] font-bold text-white">Move your Product to <br /> <span className=" text-[#118338] bg-white/70 px-4 "> Nigeria</span> in just <span className=" text-[#118338] bg-white/70 px-4 ">3</span> days</p>
+                       <p className=" font-banner md:text-5xl md:leading-[4rem] font-bold text-white">Move your Product to <br /> <span className=" text-[#118338] bg-white/70 px-4 "> Nigeria</span> in just <span className=" text-[#118338] bg-white/70 px-4 ">3</span> days</p>
                        </div>
                        <div className=" flex space-x-4">
                             <a href="" className=" px-6 py-2 rounded-full text-white bg-black flex items-center justify-center ">
@@ -46,8 +45,7 @@ const ImageCarousel = ({ images }) => {
                        </div>
                 </div>
                 <div className=" my-auto">
-                   <div className=" rounded-full h-[450px] overflow-hidden relative z-0 w-full my-auto">
-                   </div>
+                   
                 </div>
         </div>
      
