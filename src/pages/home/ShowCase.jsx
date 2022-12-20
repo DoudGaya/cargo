@@ -48,7 +48,6 @@ const ShowCase = () => {
             <div className=" flex flex-col  w-full px-2">
                 <p className=" uppercase font-bold font-banner text-lg text-gray-700">{car.type}</p>
                 <p className=" text-sm ">{car.text}</p>
-
             </div>
         </div>
         )
@@ -86,7 +85,7 @@ const ShowCase = () => {
                             read more
                         </a>
                 </div>
-                <div className=" flex flex-col space-y-2 md:space-y-6">
+                <div className=" flex flex-col space-y-2 md:space-y-6 ">
                    {singlecargo} 
                 </div>
                 
