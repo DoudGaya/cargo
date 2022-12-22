@@ -64,7 +64,7 @@ export default function Testimonials() {
         <>
          <div className="w-full flex flex-col bg-gray-800 text-white py-20 space-y-10">
                 <div className=" w-full md:w-8/12 mx-auto">
-                    <h1 className=" text-3xl font-banner font-bold">What Other Agents are Saying About Us</h1>
+                    <h1 className=" text-md text-center md:text-3xl font-banner font-bold">What Other Agents are Saying About Us</h1>
                 </div>
                 <div className=" flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 px-10">
                     {testimonials}

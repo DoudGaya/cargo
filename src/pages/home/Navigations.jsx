@@ -1,14 +1,13 @@
 import React from "react";
-import logo from '../../assets/imgs/logo_nav.png'
 
 
 const Navigation = () => {
     return (
         <>
-        <div className="bg-gray-900/30 text-white backdrop-blur-sm z-50 fixed top-0  shadow-md flex justify-between w-full dark:bg-black dark:text-white">
-        <div className="flex justify-between w-full px-6 py-3  md:px-0 md:w-10/12 md:mx-auto ">
+        <div className=" text-white bg-gradient-to-b from-black to-transparent z-50 fixed top-0  shadow-md flex justify-between w-full dark:bg-black dark:text-white">
+        <div className="flex justify-between w-full px-6 py-3 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
             <div className=" py-2 flex items-center md:space-x-4">
-                <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" />
+                {/* <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" /> */}
                 <p className=" uppercase font-bold md:text-3xl">AfriCa Global</p>
             </div>
             <ul className=" hidden md:flex flex-row   space-x-12">

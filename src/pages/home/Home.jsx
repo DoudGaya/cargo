@@ -6,16 +6,16 @@ import Socials from "./Socials";
 import WhatWeDo from "./WhatWeDo";
 import Testimonials from "./Testimonials";
 import ShowCase from "./ShowCase";
+import Partners from './Partners'
 
 
 
 const Home = () =>{
     return (
         <>
-        <div className=" flex w-full h-full bg-gray-100 dark:bg-gray-900">
-           <div className=" flex flex-col w-full justify-center mx-auto  items-center">
-            <Navigation />
+           <div className="flex flex-col w-full">
             <Banner />
+            <Partners />
             {/* <Socials /> */}
             <ShowCase />
             <Company />
@@ -24,7 +24,6 @@ const Home = () =>{
             {/* the testimonials sections */}
            
             {/* END the testimonials sections  */}
-           </div>
         </div>
         </>
     )

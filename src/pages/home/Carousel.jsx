@@ -1,6 +1,7 @@
 
 import { React, useState, useEffect } from 'react';
-// import logo from '../../assets/imgs/logo-banner.png'
+import logo from '../../assets/imgs/logo-image.png'
+// import logoBanner from '../../assets/imgs/logo-banner.png'
 
 const ImageCarousel = ({ images }) => {
   const [index, setIndex] = useState(0);
@@ -31,22 +32,32 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className='w-full h-full flex bg-no-repeat bg-cover bg-center transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[index].img})`}} >
-        <div className="relative bg-gradient-to-br from-stone-800/40 via-stone-600/40 to-stone-200/40 w-full flex h-full justify-between px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 from-black">
-                <div className=" flex flex-col my-auto py-32 space-y-6 md:px-10">
-                       <div className=" flex flex-col space-y-6">
-                       <p className=" font-banner md:text-5xl md:leading-[4rem] font-bold text-white">Move your Product to <br /> <span className=" text-[#118338] bg-white/70 px-4 "> Nigeria</span> in just <span className=" text-[#118338] bg-white/70 px-4 ">3</span> days</p>
+    <div className='w-full h-full saturate-50 flex bg-no-repeat  bg-cover bg-fixed bg-center transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[index].img})`}} >
+        <div className="relative bg-blend-color bg-stone-900/40 w-full flex h-full justify-between px-20">
+        <div className="flex w-full flex-col md:flex-row my-20  md:my-auto items-center space-x-5 ">
+        <div className=" md:h-[200px] flex-none md:w-[200px] h-32 w-32 p-4 overflow-hidden bg-white rounded-2xl ">
+                <img src={logo} className=" " alt="" />
+            </div>
+            <div className=" md:border-l-2 md:pl-6 py-4 md:text-start text-center items-center md:items-start flex flex-col">
+                   <p className=' md:text-5xl font-anton tracking-wide md:text-start flex text-white'>Welcome to the Best Container Shipping <br /> Company in Turkey and Nigeria</p>
+                   <p className=' font-banner md:text-xl text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo at tempora ut vel consectetur, soluta, odit maxime error dolor cumque alias eveniet possimus. </p>
+              </div>            
+                {/* <div className=" flex flex-col my-auto col-span-2  py-10 md:px-10">
+                       <div className=" flex flex-col ">
+                       <div className=" flex space-x-2">
+                     
+                       <p className=" font-banner md:text-2xl font-bold text-white">Move your Product to Nigeria in just 3 days</p>
+                       </div>
+
                        </div>
                        <div className=" flex space-x-4">
-                            <a href="" className=" px-6 py-2 rounded-full text-white bg-black flex items-center justify-center ">
-                                Contact Us
+                            <a className="">
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ad inventore? Eveniet alias aut, itaque officia veritatis impedit dolore voluptatibus.
                             </a>
                        </div>
-                </div>
-                <div className=" my-auto">
-                   
-                </div>
+                </div> */}
+                {/* <div className=" my-auto">     
+                </div> */}
         </div>
      
       <button onClick={handlePrevious} className="absolute left-10 top-[50%]">
