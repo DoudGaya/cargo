@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       fontFamily: {
         banner: ['Lexend Deca', 'sans-serif'],
-        main: ['Roboto', 'sans-serif']
+        main: ['Roboto', 'sans-serif'],
+        anton: ['Anton', 'sans-serif']
       }
     },
   },

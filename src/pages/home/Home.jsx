@@ -22,7 +22,6 @@ const Home = () =>{
             <Testimonials />
             <WhatWeDo />
             {/* the testimonials sections */}
-           
             {/* END the testimonials sections  */}
         </div>
         </>

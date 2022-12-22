@@ -60,7 +60,7 @@ const ShowCase = () => {
                             <img src={smallbanner} className=" object-cover h-full w-full" alt="" />
                         </div>
                         <div className="flex flex-col">
-                            <p className="font-main font-semibold tracking-wide">YOUR CARGO OUR CONCERN</p>
+                            <p className="font-main font-semibold tracking-wide">SHIP CARGO</p>
                             <div className="border-b-4 my-2 w-3/12 border-sky-800"></div>
                         </div>
                         <div className="">
@@ -75,7 +75,7 @@ const ShowCase = () => {
                             <img src={smallbanner1} className=" object-cover h-full w-full" alt="" />
                         </div>
                         <div className=" flex flex-col">
-                            <p className=" font-main font-semibold tracking-wide">YOUR CARGO OUR CONCERN</p>
+                            <p className=" font-main font-semibold tracking-wide">PLANE CARGO</p>
                             <div className=" border-b-4 my-2 w-3/12 border-sky-800"></div>
                         </div>
                         <div className="">
