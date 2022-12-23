@@ -52,7 +52,7 @@ const staffs = [
 const Company = () => {
     return (
         <>
-        <div className="  w-full flex flex-row justify-center  bg-no-repeat bg-cover bg-left backdrop-blur-sm" style={{backgroundImage: `url('${banner}')` }}>
+        <div className="  w-full flex flex-row justify-center  bg-no-repeat bg-cover bg-left " style={{backgroundImage: `url('${banner}')` }}>
            <div className=" backdrop-blur-md flex w-full items-center justify-center">
            <div className=" grid grid-cols-1 md:grid-cols-3 w-10/12 content-center ">
                 <div className=" col-span-2 flex flex-col my-6 md:my-0 md:w-[650px] mx-auto">

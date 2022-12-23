@@ -8,6 +8,8 @@ import Testimonials from "./Testimonials";
 import ShowCase from "./ShowCase";
 import Partners from './Partners'
 import Newsletter from "./Newsletter";
+import Gallery from "./Gallery";
+import Footer from "./Footer";
 
 
 
@@ -21,10 +23,10 @@ const Home = () =>{
             <ShowCase />
             <Company />
             <Testimonials />
+            <Gallery />
             <Newsletter />
-            <WhatWeDo />
-            {/* the testimonials sections */}
-            {/* END the testimonials sections  */}
+            <Footer />
+            {/* <WhatWeDo /> */}
         </div>
         </>
     )
