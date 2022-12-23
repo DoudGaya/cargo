@@ -11,7 +11,7 @@ const SocialIcons = () => {
         <>
         <div className="w-full flex flex-row justify-around">
             <a href="#">
-                Socials HEre
+                Socials Here
             </a>
         </div>
         </>

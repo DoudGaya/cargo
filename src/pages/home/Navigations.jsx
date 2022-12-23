@@ -4,7 +4,7 @@ import React from "react";
 const Navigation = () => {
     return (
         <>
-        <div className=" text-white bg-gradient-to-b from-black to-transparent z-50 fixed top-0  shadow-md flex justify-between w-full dark:bg-black dark:text-white">
+        <div className=" text-black bg-gradient-to-b bg-white z-50 fixed top-0  shadow-md flex justify-between w-full dark:bg-black dark:text-white">
         <div className="flex justify-between w-full px-6 py-3 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
             <div className=" py-2 flex items-center md:space-x-4">
                 {/* <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" /> */}
