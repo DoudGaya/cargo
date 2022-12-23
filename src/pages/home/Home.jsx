@@ -7,6 +7,7 @@ import WhatWeDo from "./WhatWeDo";
 import Testimonials from "./Testimonials";
 import ShowCase from "./ShowCase";
 import Partners from './Partners'
+import Newsletter from "./Newsletter";
 
 
 
@@ -20,6 +21,7 @@ const Home = () =>{
             <ShowCase />
             <Company />
             <Testimonials />
+            <Newsletter />
             <WhatWeDo />
             {/* the testimonials sections */}
             {/* END the testimonials sections  */}
