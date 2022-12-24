@@ -41,12 +41,12 @@ const ShowCase = () => {
 
     const singlecargo = cargoes.map( car => {
         return (
-            <div className=" flex space-x-4 border-b px-4 py-2">
+            <div className=" flex space-x-4 border-b dark:text-gray-200 px-4 py-2">
             <div className=" h-[100px] w-[250px] overflow-hidden">
             <img src={car.img} className=" flex-none object-cover h-full w-full" alt="" />
             </div>
             <div className=" flex flex-col  w-full px-2">
-                <p className="uppercase font-bold font-banner text-lg text-gray-700">{car.type}</p>
+                <p className="uppercase font-bold font-banner text-lg text-gray-700 dark:text-gray-200">{car.type}</p>
                 <p className="text-sm ">{car.text}</p>
             </div>
         </div>
@@ -60,10 +60,10 @@ const ShowCase = () => {
                             <img src={smallbanner} className=" object-cover h-full w-full" alt="" />
                         </div>
                         <div className="flex flex-col">
-                            <p className="font-main font-semibold tracking-wide">SHIP CARGO</p>
+                            <p className="font-main font-semibold tracking-wide dark:text-gray-200">SHIP CARGO</p>
                             <div className="border-b-4 my-2 w-3/12 border-sky-800"></div>
                         </div>
-                        <div className="">
+                        <div className=" dark:text-gray-200">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sint omnis ducimus modi odit, sequi architecto similique quasi reprehenderit dicta natus at unde? Veniam saepe ratione laudantium tempore, soluta quae?
                         </div>
                         <a href="#" className=" uppercase text-sky-600 font-semibold">
@@ -75,10 +75,10 @@ const ShowCase = () => {
                             <img src={smallbanner1} className=" object-cover h-full w-full" alt="" />
                         </div>
                         <div className=" flex flex-col">
-                            <p className=" font-main font-semibold tracking-wide">PLANE CARGO</p>
+                            <p className=" font-main font-semibold tracking-wide dark:text-gray-200">PLANE CARGO</p>
                             <div className=" border-b-4 my-2 w-3/12 border-sky-800"></div>
                         </div>
-                        <div className="">
+                        <div className=" dark:text-gray-200">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sint omnis ducimus modi odit, sequi architecto similique quasi reprehenderit dicta natus at unde? Veniam saepe ratione laudantium tempore, soluta quae?
                         </div>
                         <a href="#" className=" uppercase text-sky-600 font-semibold">
