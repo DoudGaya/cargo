@@ -1,5 +1,6 @@
 
 import { React, useState, useEffect } from 'react';
+// import logoImage from '../../assets/imgs/logo-image.jpg'
 import logo from '../../assets/imgs/logo-image.png'
 // import logoBanner from '../../assets/imgs/logo-banner.png'
 
@@ -32,16 +33,16 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className='w-full h-full saturate-50 flex bg-no-repeat  bg-cover bg-fixed bg-center transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[index].img})`}} >
-        <div className="relative bg-blend-color bg-stone-900/40 w-full flex h-full justify-between px-20">
+    <div className='w-full h-full saturate-50 bg-cover bg-center flex bg-no-repeat bg-fixed bg-transparent transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[1].img})`}} >
+        <div className="relative bg-blend-color  w-full flex h-full justify-between px-20">
         <div className="flex w-full flex-col md:flex-row my-20  md:my-auto items-center space-x-5 ">
-        <div className=" md:h-[200px] flex-none md:w-[200px] h-32 w-32 p-4 overflow-hidden bg-white rounded-2xl ">
+        {/* <div className=" md:h-[200px] flex-none md:w-[200px] h-32 w-32 p-4 overflow-hidden bg-white rounded-2xl ">
                 <img src={logo} className=" " alt="" />
-            </div>
-            <div className=" md:border-l-2 md:pl-6 py-4 md:text-start text-center items-center md:items-start flex flex-col">
+            </div> */}
+            {/* <div className=" md:border-l-2 md:pl-6 py-4 md:text-start text-center items-center md:items-start flex flex-col">
                    <p className=' md:text-5xl font-anton tracking-wide md:text-start flex text-white'>Welcome to the Best Container Shipping <br /> Company in Turkey and Nigeria</p>
                    <p className=' font-banner md:text-xl text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo at tempora ut vel consectetur, soluta, odit maxime error dolor cumque alias eveniet possimus. </p>
-              </div>            
+              </div>             */}
                 {/* <div className=" flex flex-col my-auto col-span-2  py-10 md:px-10">
                        <div className=" flex flex-col ">
                        <div className=" flex space-x-2">

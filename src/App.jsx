@@ -13,8 +13,8 @@ function App() {
     <>
     <div className="bg-gray-100 dark:bg-gray-900 flex flex-col w-full h-full">
     <Navigation />
-      <Home />
-      {/* <About /> */}
+      {/* <Home /> */}
+      <About />
       {/* <ComingSoon/> */}
     </div>
     </>
