@@ -1,8 +1,6 @@
 import React from "react";
 import shortBanner from '../../assets/imgs/plane_cargo.jpg'
 
-
-
 const AirCargo = () => {
     return (
         <>
@@ -17,7 +15,6 @@ const AirCargo = () => {
                 <div className=" bg-cover h-[400px]"  >
                     <img src={shortBanner} alt="" className=" w-full h-full object-cover" />
                 </div>
-
             </div>
         </div>
         </>
