@@ -9,8 +9,8 @@ const About = () => {
         <>
         <div className="">
             <AboutBanner />
-            <AirCargo />
             <AboutTheCompany />
+            <AirCargo />
         </div>
         </>
     )
