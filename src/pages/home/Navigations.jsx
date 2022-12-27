@@ -3,11 +3,17 @@ import {React, useState} from "react";
 
 
 
-const servicesModal = () => {
+
+
+
+const ServicesModal = () => {
     return (
         <>
-        <div className="">
-            Hello world
+       <div className="absolute transition-all delay-150 ease-linear -bottom-16 rounded-md bg-white text-black pl-4 pr-10  py-4 ">
+            <ul className=" flex flex-col space-y-2">
+                <li>Shipping</li>
+                <li>Plane Cargo</li>
+            </ul>
         </div>
         </>
     )
@@ -15,6 +21,19 @@ const servicesModal = () => {
 
 
 const Navigation = () => {
+
+    const [services, setServices] = useState(false)
+
+function dropServices() {
+   return setServices(true)
+}
+
+
+function closeServices() {
+    return setServices(false)
+}
+
+
 
     return (
         <>
@@ -43,7 +62,7 @@ const Navigation = () => {
                     </a>
                 </li>
 
-                <li className="items-center flex-col  justify-center flex ">
+                <li onMouseOver={dropServices} onMouseOut={closeServices} className="items-center flex-col   justify-center flex ">
                     <div  className=" text-small flex flex-col  cursor-pointer  ">
                         <div className="flex space-x-2 items-center">
                             <p>Services</p>
@@ -51,18 +70,13 @@ const Navigation = () => {
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
                         </div>
+                       {services ? <ServicesModal /> : ''}
 
-                        <div className="absolute -bottom-20 rounded-md bg-white text-black pl-4 pr-10  py-4 ">
-                                <ul className=" flex flex-col space-y-2">
-                                    <li>Shipping</li>
-                                    <li>Plane Cargo</li>
-                                </ul>
-                        </div>
                     </div>
                 </li>
 
                 <li className="items-center flex ">
-                    <a href="tel:+090 539 380 9466" className=" px-6 py-3 bg-[#fac919] font-semibold ">+090 539 380 9466</a>
+                    <a href="tel:+090 539 380 9466" className=" px-6 py-2 bg-[#fac919] font-semibold ">+090 539 380 9466</a>
                 </li>
             </ul>
 
