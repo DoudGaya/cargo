@@ -31,7 +31,7 @@ const TurkeyOffice = () => {
     return (
         <>
         <div className=" flex w-full ">
-            <div className=" grid grid-cols-2 w-full">
+            <div className=" grid grid-cols-2 w-full px-20 my-10">
                 <div className=" px-20 py-10 flex flex-col bg-gray-800 text-white">
                   <div className=" flex flex-col  my-auto space-y-3">
                   <h1 className=" uppercase text-2xl">Our Turkey Office</h1>
