@@ -6,7 +6,7 @@ const Socials = ( { phone, email }) => {
 
     return (
         <>
-            <div className=" flex text-white space-x-6">
+            <div className=" flex flex-col space-y-4 text-white md:space-x-6">
                 <a href="mailto:contact@afrikaglobal.com" className=" space-x-3 rounded-md  bg-stone-600 items-center justify-center text-center px-4 py-2 flex ">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -36,7 +36,7 @@ const OfficeAddress = ( { office }) => {
 
     const contents = (
         <div className=" px-20 py-20 flex flex-col">
-        <div className=" flex flex-col  my-auto space-y-3">
+        <div className=" flex flex-col my-auto space-y-3">
         <h1 className=" uppercase text-2xl font-bold">{office.title}</h1>
           <div className=" border-b-2 w-3/12 border-yellow-600"></div>
           <p>{office.description}</p>
@@ -76,7 +76,7 @@ if (office.firstSection) {
     return (
         <>
         <div className="flex w-full ">
-            <div className=" grid grid-cols-2 w-full px-20 ">
+            <div className=" grid grid-cols-1 :grid-cols-2 w-full px-20 ">
                 {first}
                 {second}
             </div>

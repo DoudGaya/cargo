@@ -2,12 +2,12 @@
 export default function AboutTheCompany() {
     return (
         <>
-              <div className=" w-7/12 my-10 mx-auto flex flex-col justify-center item-center text-center ">
+              <div className=" w-full px-6 md:px-0 md:w-7/12 my-10 mx-auto flex flex-col justify-center item-center text-center ">
                 <p className='text-orange-500 text-3xl font-anton pb-6'>Why Us</p>
                 <p className=' text-base text-gray-800 dark:text-gray-200'>
                     Tempora natus enim, aliquam doloremque voluptates eum illum. Sed consectetur quam reiciendis porro in quibusdam, iusto, ab corporis praesentium ipsam quae deleniti. Ullam sed nesciunt perferendis iusto dignissimos, eligendi nisi harum beatae obcaecati sequi optio vero ratione dolores cumque suscipit neque non ex nobis qui. Molestias inventore corporis harum non magnam blanditiis, at aut quia suscipit, enim aspernatur fugit minima?
                 </p>
-                <div className=" grid grid-cols-3 my-10 gap-x-10">
+                <div className=" grid grid-cols-1 md:grid-cols-3 my-10 gap-10">
                     <div className=" flex flex-col bg-gradient-to-r bg-gray-200 rounded-lg py-4 space-y-1">
                         <div className=" flex justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-16 stroke-1 stroke-yellow-500 h-16" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
