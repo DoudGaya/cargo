@@ -3,8 +3,9 @@ import AboutBanner from "./AboutBanner";
 import AboutTheCompany from "./AbousTheCompany";
 import OfficeAddress from "./OfficeAddress";
 import NigerianOffice from "./NigerianOffice";
-import Team from "./Records";
+import Records from "./Records";
 import Company from "../home/Company";
+import Partners from "./Partners";
 
 const officeSections = [
     {
@@ -34,8 +35,9 @@ const About = () => {
             <AboutBanner />
             <AboutTheCompany />
              {office}
-            <Team />
+            <Partners />
             <Company />
+            <Records />
         </div>
         </>
     )

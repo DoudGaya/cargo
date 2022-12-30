@@ -11,7 +11,7 @@ const SocialIcons = () => {
         <>
         <div className="w-full flex flex-row justify-around">
             <a href="#">
-                    
+
             </a>
         </div>
         </>
@@ -76,22 +76,22 @@ const Company = () => {
                     </div>
                         <div className=" flex flex-col space-y-1 ">
                             <label htmlFor="name" className=' text-sm text-white'>Name</label>
-                            <input type="text" name='Name' className=' text-sky-900 py-2 px-4 text-sm outline-none ' />
+                            <input type="text" name='Name' placeholder='Your name' className=' text-sky-900 py-2 px-4 text-sm outline-none ' />
                         </div>
 
                         <div className=" flex flex-col space-y-1 ">
                             <label htmlFor="name" className=' text-sm text-white'>Email </label>
-                            <input type="text" name='Name' className=' text-sky-900 py-2 px-4 text-sm outline-none ' />
+                            <input type="text" name='Name' placeholder=' Your email Address' className=' text-sky-900 py-2 px-4 text-sm outline-none ' />
                         </div>
 
                         <div className=" flex flex-col space-y-1 ">
                             <label htmlFor="name" className=' text-sm text-white'>Phone Number</label>
-                            <input type="text" name='Name' className=' text-sky-900 py-2 px-4 text-sm outline-none ' />
+                            <input type="text" name='Name' placeholder=' Your phone number ' className=' text-sky-900 py-2 px-4 text-sm outline-none ' />
                         </div>
 
                         <div className=" flex flex-col space-y-1 ">
                             <label htmlFor="name" className=' text-sm text-white'>Phone Number</label>
-                            <textarea name="message" id="" cols="20" rows="5" className='py-2 px-4 outline-none'></textarea>
+                            <textarea name="message" id="" cols="20" placeholder='Send Us a Message' rows="5" className='py-2 px-4 outline-none'></textarea>
                         </div>
                     </form>
                     

@@ -73,20 +73,20 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className=" flex flex-col">
-                    <p>Send Us A Message</p>
+                    <p>Contact Us</p>
                     <form className=" flex flex-col space-y-2 w-full mt-4 ">
                         <div>
                             <label htmlFor="name" className="hidden">Name</label>
-                            <input type="text" placeholder="Your Name here..." className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" />
+                            <input type="text" placeholder="Name" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" />
                         </div>
                         <div>
                             <label htmlFor="name" className="hidden">Name</label>
-                            <input type="text" placeholder="Your Name here..." className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" />
+                            <input type="text" placeholder="Email" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" />
                         </div>
 
                         <div>
                             <label htmlFor="name" className="hidden">Name</label>
-                            <textarea type="text" cols="30" rows="3" placeholder="Your Name here..." className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" ></textarea>
+                            <textarea type="text" cols="30" rows="3" placeholder="Message" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" ></textarea>
                         </div>
                     </form>
                 </div>
