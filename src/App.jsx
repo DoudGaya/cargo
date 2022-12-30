@@ -5,6 +5,7 @@ import About from './pages/about/About'
 import Navigation from './pages/home/Navigations';
 // import ComingSoon from './pages/home/ComingSoon';
 import 'boxicons';
+import Footer from './pages/home/Footer';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       {/* <Home /> */}
       <About />
       {/* <ComingSoon/> */}
+      <Footer />
     </div>
     </>
   )

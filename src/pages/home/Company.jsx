@@ -11,7 +11,7 @@ const SocialIcons = () => {
         <>
         <div className="w-full flex flex-row justify-around">
             <a href="#">
-                Socials Here
+                    
             </a>
         </div>
         </>
@@ -62,16 +62,7 @@ const Company = () => {
 
                         {ceo}
                        
-                        {/* <div className=" w-full px-10 mx-auto flex flex-col ">
-                            <div className=" flex flex-col items-center space-y-6 mx-auto">
-                            <img src={coFounder} className=' h-[250px] rounded-full object-cover w-[250px]' alt="" />
-                            <div className=" flex justify-center flex-col items-center">
-                                <p className=' font-semibold text-sm group-hover:text-white'>The Founder</p>
-                                <p className='group-hover:text-white text-xl'>Shahruzaman Bala </p>
-                                <SocialIcons />
-                            </div>
-                            </div>
-                        </div> */}
+                       
 
                     </div>
                 </div>
