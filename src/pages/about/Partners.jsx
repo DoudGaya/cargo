@@ -14,6 +14,7 @@ const Logos = ( { part } ) => {
 }
 
 
+
 const logo = partners.map( (single) => {
     return <Logos key={single.id} part={single} />
 })
@@ -23,13 +24,11 @@ export default function Partners() {
 
     return (
         <>
-
-        <div className=" flex w-full   py-20">
-            <div className=" w-8/12 mx-auto grid gap-2 grid-cols-4">
+        <div className=" flex w-full md:py-20">
+            <div className=" md:w-8/12 mx-auto grid gap-2 px-4 grid-cols-2 md:grid-cols-4">
                 {logo}
             </div>
         </div>
-        
         </>
     )
 }
