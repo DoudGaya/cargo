@@ -16,7 +16,7 @@ const Logos = ( { part } ) => {
 
 
 const logo = partners.map( (single) => {
-    return <Logos key={single.id} part={single} />
+    return <Logos key={single.id}  part={single} />
 })
 
 

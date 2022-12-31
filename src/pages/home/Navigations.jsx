@@ -1,10 +1,5 @@
 import {React, useState} from "react";
-
-
-
-
-
-
+import { Link } from "react-router-dom";
 
 const ServicesModal = () => {
     return (
@@ -45,21 +40,21 @@ function closeServices() {
             </div>
             <ul className=" hidden md:flex flex-row  space-x-12">
                 <li className="items-center flex ">
-                    <a href="" className=" text-small ">
+                    <Link to="/" className=" text-small ">
                         Home
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="items-center flex ">
-                    <a href="" className=" text-small  ">
+                    <Link to="/about" className=" text-small  ">
                         About
-                    </a>
+                    </Link>
                 </li>
 
                 <li className="items-center flex ">
-                    <a href="" className=" text-small  ">
+                    <Link to="/contact" className=" text-small  ">
                         Contact
-                    </a>
+                    </Link>
                 </li>
 
                 <li onMouseOver={dropServices} onMouseOut={closeServices} className="items-center flex-col   justify-center flex ">

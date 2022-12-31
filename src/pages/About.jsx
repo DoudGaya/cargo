@@ -1,13 +1,15 @@
 import React from "react";
-import AboutBanner from "./AboutBanner";
-import AboutTheCompany from "./AbousTheCompany";
-import OfficeAddress from "./OfficeAddress";
-import NigerianOffice from "./NigerianOffice";
-import Records from "./Records";
-import Company from "../home/Company";
-import Partners from "./Partners";
+import AboutBanner from "./about/AboutBanner";
+import AboutTheCompany from "./about/AbousTheCompany";
+import OfficeAddress from "./about/OfficeAddress";
+import NigerianOffice from "./about/NigerianOffice";
+import Records from "./about/Records";
+import Company from "./home/Company";
+import Partners from "./about/Partners";
 
-const officeSections = [
+
+
+const officeSections = [    
     {
         title: 'Turkey Office',
         firstSection: false,
@@ -15,6 +17,7 @@ const officeSections = [
         email: 'turkey@afrikaglobal.com',
         phone: '234 66 32234 00'
     },
+
 
     {
         title: 'Nigerian Office',
@@ -26,19 +29,17 @@ const officeSections = [
 ]
 
 
-const About = () => {
 
-    // const office = officeSections.map( ofc => <OfficeAddress office={ofc} key={ofc.title} /> )
+const About = () => {
     return (
         <>
-        <div className="">
-            <AboutBanner />
-            <AboutTheCompany />
-             {/* <OfficeAddress office={officeSections} /> */}
-            <Partners />
-            <Company />
-            <Records />
-        </div>
+            <div className="">
+                <AboutBanner />
+                <AboutTheCompany />
+                <Partners />
+                <Company />
+                <Records />
+            </div>
         </>
     )
 }
