@@ -4,8 +4,9 @@ const Footer = () => {
     return (
         <>
         <div className=" w-full h-full text-gray-100 flex flex-col bg-black">
-            <div className=" grid grid-cols-5 w-10/12 mx-auto py-20">
-                <div className=" col-span-2 font-main ">
+            <div className=" grid grid-cols-1 gap-6 md:grid-cols-5 w-10/12 mx-auto py-20">
+               
+                <div className=" col-span-1 border-l px-4 border-gray-700 md:col-span-2 font-main ">
                     <h2 className=" font-bold uppercase">ABOUT US</h2>
                     <p className="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis accusantium nostrum et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis aut dolore maxime, recusandae quibusdam repudiandae saepe est? Deleniti, harum. Totam consequuntur assumenda dolorum eveniet sed ea vero?</p>
                 </div>
