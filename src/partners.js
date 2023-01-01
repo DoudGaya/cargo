@@ -13,21 +13,21 @@ const partners = [
     },
 
     {
-        id: 1,
+        id: 2,
         url: 'https://www.cma-cgm.com/' ,
         company: 'cma-cgm',
         logo: cma,
     },
 
     {
-        id: 1,
+        id: 3,
         url: 'https://www.hapag-lloyd.com/en/home.html' ,
         company: 'Hapag-Lloyd',
         logo: hapag,
     },
 
     {
-        id: 1,
+        id: 4,
         url: 'https://www.maersk.com/' ,
         company: 'Mearsk',
         logo: maersk,
