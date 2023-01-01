@@ -1,16 +1,21 @@
-import Banner from "../assets/imgs/banner3.jpg";
+import banner from "../assets/imgs/banner4.jpg";
 const Contact = () => {
     return (
         <>
-        <div className=" w-full flex lex-col">
-            <div className="w-full h-[500] bg-gradient-to-r from-blue-600 to-sky-600" style={{backgroundImage: `url(${Banner})`}}>
-                When things goes wrong
+            <div className="w-full h-[500px] bg-cover bg-gradient-to-r " style={{backgroundImage: `url('${banner}')`}} >
+                <div className="grid grid-cols-3">
+                    <div className=" col-span-2">
+
+                    </div>
+
+                    <div className="">
+                        <img alt="" />
+                    </div>
+                </div>
             </div>
-            Contact Us Here...
-        </div>
+
         </>
     )
 }
-
 
 export default Contact;
