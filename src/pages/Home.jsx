@@ -10,7 +10,6 @@ import Gallery from "./home/Gallery";
 import AboutTheCompany from "./about/AbousTheCompany";
 
 
-
 const Home = () =>{
     return (
         <>
@@ -27,4 +26,5 @@ const Home = () =>{
         </>
     )
 }
+
 export default Home
