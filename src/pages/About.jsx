@@ -1,10 +1,9 @@
 import React from "react";
-import AboutBanner from "./about/AboutBanner";
+// import AboutBanner from "./about/AboutBanner";
 import AboutTheCompany from "./about/AbousTheCompany";
-import OfficeAddress from "./about/OfficeAddress";
-import NigerianOffice from "./about/NigerianOffice";
 import Records from "./about/Records";
 import Company from "./home/Company";
+import PageBanner from './generals/Banner'
 import Partners from "./about/Partners";
 
 
@@ -30,11 +29,17 @@ const officeSections = [
 
 
 
+
+
 const About = () => {
+
+
+
+
     return (
         <>
             <div className="">
-                <AboutBanner />
+                <PageBanner banner="About" />
                 <AboutTheCompany />
                 <Partners />
                 <Company />

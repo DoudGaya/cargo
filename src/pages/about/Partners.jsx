@@ -1,8 +1,6 @@
 
 import partners from '../../partners'
 
-
-
 const Logos = ( { part } ) => {
     return (
         <>
@@ -12,6 +10,8 @@ const Logos = ( { part } ) => {
         </>
     )
 }
+
+
 
 
 
