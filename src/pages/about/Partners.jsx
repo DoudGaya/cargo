@@ -24,8 +24,9 @@ export default function Partners() {
 
     return (
         <>
-        <div className=" flex w-full md:py-20">
-            <div className=" md:w-8/12 mx-auto grid gap-2 px-4 grid-cols-2 md:grid-cols-4">
+        <div className=" flex flex-col w-full items-center md:py-20">
+            <p className='text-orange-500 text-3xl font-anton pb-6'>Our Partners</p>
+            <div className="md:w-8/12 mx-auto grid gap-2 px-4 grid-cols-2 md:grid-cols-4">
                 {logo}
             </div>
         </div>
