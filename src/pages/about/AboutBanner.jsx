@@ -1,4 +1,5 @@
 import aboutBanner from '../../assets/imgs/banner5.jpg'
+import { Link } from 'react-router-dom'
 import AboutTheCompany from './AbousTheCompany'
 
 
@@ -7,7 +8,7 @@ const AboutBanner = () => {
         <>
         <div className="h-[400px] bg-cover bg-top" style={{ backgroundImage: `url(${aboutBanner})`}}>
             <div className=" h-full bg-stone-900/40 w-full flex items-center justify-center">
-                <p className='  text-3xl text-white font-anton tracking-wide font-bold'>Home <span className=' text-3xl font-bold text-white'>{'>'}</span> about</p> 
+                <p className='  text-3xl text-white font-anton tracking-wide font-bold'><Link to="/">Home</Link> <span className=' text-3xl font-bold text-white'>{'>'}</span> about</p> 
             </div>
         </div>
         </>

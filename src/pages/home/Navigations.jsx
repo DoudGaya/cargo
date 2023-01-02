@@ -4,15 +4,17 @@ import { Link } from "react-router-dom";
 const ServicesModal = () => {
     return (
         <>
-       <div className="absolute transition-all delay-150 ease-linear -bottom-16 rounded-md bg-white text-black pl-4 pr-10  py-4 ">
+       <div className="absolute transition-all delay-150 ease-linear -bottom-20 rounded-md bg-white text-black px-4  w-[200px]  py-4 ">
             <ul className=" flex flex-col space-y-2">
-                <li>Shipping</li>
-                <li>Plane Cargo</li>
+                <Link to="/cargo" className=" px-4 hover:bg-gray-300 hover:rounded-md py-1 w-full">Cargo</Link>
+                <Link to="/shipment" className=" px-4 hover:bg-gray-300 hover:rounded-md py-1 w-full">Shipment</Link>
             </ul>
         </div>
         </>
     )
 }
+
+
 
 
 const Navigation = () => {
@@ -66,12 +68,11 @@ function closeServices() {
                             </svg>
                         </div>
                        {services ? <ServicesModal /> : ''}
-
                     </div>
                 </li>
 
                 <li className="items-center flex ">
-                    <a href="tel:+090 539 380 9466" className=" px-6 py-2 bg-[#fac919] font-semibold ">+090 539 380 9466</a>
+                    <a href="tel:+090 539 380 9466" className=" px-6 py-2bg-[#fac919] font-semibold ">+090 539 380 9466</a>
                 </li>
             </ul>
 
