@@ -6,8 +6,8 @@ const ServicesModal = () => {
         <>
        <div className="absolute transition-all delay-150 ease-linear -bottom-20 rounded-md bg-white text-black px-4  w-[200px]  py-4 ">
             <ul className=" flex flex-col space-y-2">
-                <Link to="/cargo" className=" px-4 hover:bg-gray-300 hover:rounded-md py-1 w-full">Cargo</Link>
-                <Link to="/shipment" className=" px-4 hover:bg-gray-300 hover:rounded-md py-1 w-full">Shipment</Link>
+                <Link to="/aircargo" className=" px-4 hover:bg-gray-300 hover:rounded-md py-1 w-full">Cargo</Link>
+                <Link to="/shipping" className=" px-4 hover:bg-gray-300 hover:rounded-md py-1 w-full">Shipment</Link>
             </ul>
         </div>
         </>
