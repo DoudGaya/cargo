@@ -1,6 +1,9 @@
 import {React, useState} from "react";
 import { Link } from "react-router-dom";
 
+
+
+
 const ServicesModal = () => {
     return (
         <>
@@ -40,7 +43,7 @@ function closeServices() {
                 {/* <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" /> */}
                 <p className=" uppercase font-bold md:text-3xl">Afrika Global</p>
             </div>
-            <ul className=" hidden md:flex flex-row  space-x-12">
+            <ul className="hidden md:flex flex-row  space-x-12">
                 <li className="items-center flex ">
                     <Link to="/" className=" text-small ">
                         Home
@@ -54,15 +57,16 @@ function closeServices() {
                 </li>
 
                 <li className="items-center flex ">
-                    <Link to="/contact" className=" text-small  ">
+                    <Link to="/contact" className=" text-small ">
                         Contact
                     </Link>
                 </li>
 
-                <li onMouseOver={dropServices} onMouseOut={closeServices} className="items-center flex-col   justify-center flex ">
+                <li onMouseOver={dropServices} onMouseOut={closeServices} className="items-center flex-col justify-center flex ">
                     <div  className=" text-small flex flex-col  cursor-pointer  ">
                         <div className="flex space-x-2 items-center">
                             <p>Services</p>
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
@@ -72,14 +76,14 @@ function closeServices() {
                 </li>
 
                 <li className="items-center flex ">
-                    <a href="tel:+090 539 380 9466" className=" px-6 py-2bg-[#fac919] font-semibold ">+090 539 380 9466</a>
+                    <a href="tel:+090 539 380 9466" className=" px-6 py-2 bg-[#fac919] font-semibold ">+090 539 380 9466</a>
                 </li>
             </ul>
 
-           <button className="block md:hidden">
-           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+           <button className="block md:hidden bg-pink-200">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
            </button>
 
            
