@@ -2,8 +2,6 @@ import {React, useState} from "react";
 import { Link } from "react-router-dom";
 
 
-
-
 const ServicesModal = () => {
     return (
         <>
@@ -17,28 +15,37 @@ const ServicesModal = () => {
     )
 }
 
-
-
-
 const Navigation = () => {
-
     const [services, setServices] = useState(false)
-
+    const [nav, setNav] = useState(false)
 function dropServices() {
    return setServices(true)
 }
-
 
 function closeServices() {
     return setServices(false)
 }
 
+const toggleNavbar = () => {
+   setNav( (prevNav) => !prevNav )
+}
 
+
+const navSections = (
+    <div className="bg-pink-900 h-[100vh] rounded-3xl z-50 w-11/12 mx-auto">
+    <div className=" flex w-full h-full justify-center items-center text-white">
+    <p className=" text-3xl"> Hello world</p>
+    </div>
+  </div>
+)
 
     return (
         <>
-        <div className=" text-white bg-gradient-to-b from-black/90 to bg-transparent z-50 fixed top-0 flex justify-between w-full dark:bg-black dark:text-white">
-        <div className="flex justify-between w-full px-6 py-3 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
+
+       
+       
+        <div className=" text-white bg-gradient-to-b from-black/90 flex-col to bg-transparent z-20 fixed top-0 flex justify-between w-full dark:bg-black dark:text-white">
+        <div className="flex justify-between w-full px-6 py-6 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
             <div className="py-2 flex items-center md:space-x-4">
                 {/* <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" /> */}
                 <p className=" uppercase font-bold md:text-3xl">Afrika Global</p>
@@ -80,7 +87,7 @@ function closeServices() {
                 </li>
             </ul>
 
-           <button className="block md:hidden bg-pink-200">
+           <button className="block md:hidden" onClick={toggleNavbar}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
@@ -88,7 +95,11 @@ function closeServices() {
 
            
         </div>
+        {
+            nav ? navSections : ''
+        }
         </div>
+       
         </>
     )
 }

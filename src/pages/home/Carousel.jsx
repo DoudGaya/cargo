@@ -1,7 +1,8 @@
 
 import { React, useState, useEffect } from 'react';
 // import logoImage from '../../assets/imgs/logo-image.jpg'
-import logo from '../../assets/imgs/logo-image.png'
+// import banner from '../../assets/imgs/banner.svg'
+import logo from '../../assets/imgs/logo_nav.png'
 // import logoBanner from '../../assets/imgs/logo-banner.png'
 
 const ImageCarousel = ({ images }) => {
@@ -33,9 +34,13 @@ const ImageCarousel = ({ images }) => {
   };
 
   return (
-    <div className='w-full h-full saturate-50 bg-cover bg-center flex bg-no-repeat bg-fixed bg-transparent transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[1].img})`}} >
+    <div className='w-full h-full saturate-50 bg-cover bg-center flex bg-no-repeat bg-fixed bg-transparent transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${banner})`}} >
         <div className="relative bg-blend-color  w-full flex h-full justify-between px-20">
         <div className="flex w-full flex-col md:flex-row my-20  md:my-auto items-center space-x-5 ">
+
+          <div className=" bg-yellow-200">
+            <img src={logo} alt="" className=' w-[300px] h-[300px] shadow-lg rounded-lg' srcset="" />
+          </div>
         {/* <div className=" md:h-[200px] flex-none md:w-[200px] h-32 w-32 p-4 overflow-hidden bg-white rounded-2xl ">
                 <img src={logo} className=" " alt="" />
             </div> */}
@@ -61,7 +66,7 @@ const ImageCarousel = ({ images }) => {
                 </div> */}
         </div>
      
-      <button onClick={handlePrevious} className="absolute left-10 top-[50%]">
+      {/* <button onClick={handlePrevious} className="absolute left-10 top-[50%]">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" transform rotate-180 w-6  h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
       </svg>
@@ -71,7 +76,7 @@ const ImageCarousel = ({ images }) => {
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
         </svg>
-      </button>
+      </button> */}
         </div>
     </div>
   );
