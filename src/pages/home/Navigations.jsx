@@ -1,5 +1,6 @@
 import {React, useState} from "react";
 import { Link } from "react-router-dom";
+import logo from '../../assets/imgs/logo_nav.png'
 
 
 const ServicesModal = () => {
@@ -32,9 +33,28 @@ const toggleNavbar = () => {
 
 
 const navSections = (
-    <div className="bg-pink-900 h-[100vh] rounded-3xl z-50 w-11/12 mx-auto">
-    <div className=" flex w-full h-full justify-center items-center text-white">
-    <p className=" text-3xl"> Hello world</p>
+    <div className=" md:hidden flex flex-col bg-gray-900 h-[100vh] absolute z-50 w-full ">
+        <div className=" py-4 px-6  flex justify-between  items-center text-center ">
+        <p className=" uppercase text-2xl font-semibold">Afrika Global</p>
+        <button className="" onClick={toggleNavbar}>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+         </svg>
+
+        </button>
+        </div>
+    <div className=" flex flex-col w-full h-full text-white p-10">
+        <ul className=" flex flex-col space-y-4">
+            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Home</li>
+            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">About</li>
+            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Contact</li>
+            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Plane Cargo</li>
+            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Shipping</li>
+        </ul>
+
+        <div className=" my-10 rounded-3xl p-6 overflow-hidden">
+            <img src={logo} alt="" className=" rounded-3xl " srcset="" />
+        </div>
     </div>
   </div>
 )
@@ -45,6 +65,7 @@ const navSections = (
        
        
         <div className=" text-white bg-gradient-to-b from-black/90 flex-col to bg-transparent z-20 fixed top-0 flex justify-between w-full dark:bg-black dark:text-white">
+            { nav ? navSections : ''}
         <div className="flex justify-between w-full px-6 py-6 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
             <div className="py-2 flex items-center md:space-x-4">
                 {/* <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" /> */}
@@ -92,12 +113,8 @@ const navSections = (
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
            </button>
-
-           
         </div>
-        {
-            nav ? navSections : ''
-        }
+       
         </div>
        
         </>

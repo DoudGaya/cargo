@@ -41,7 +41,7 @@ const ShowCase = () => {
 
     const singlecargo = cargoes.map( car => {
         return (
-            <div className=" flex space-x-4 border-b dark:text-gray-200 px-4 py-2">
+            <div key={car.id} className=" flex space-x-4 border-b dark:text-gray-200 px-4 py-2">
             <div className=" h-[100px] w-[250px] overflow-hidden">
             <img src={car.img} className=" flex-none object-cover h-full w-full" alt="" />
             </div>
