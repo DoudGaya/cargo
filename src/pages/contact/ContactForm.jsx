@@ -1,3 +1,4 @@
+
 import bannerImage from "../../assets/imgs/banner6.jpg"
 
 
@@ -46,8 +47,8 @@ const locations = [
             }
         ],
         contacts: [
-            '090 NIGERIAN NUMBER 1',
-            '0902 NIGERIAN NUMBER 2'
+            '+090 539 380 9466',
+            '+90212 586 27 30'
         ],
 
     },
@@ -116,3 +117,6 @@ const ContactForm = () => {
 
 
 export default ContactForm
+
+
+
