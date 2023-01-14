@@ -1,5 +1,5 @@
-import founder from '../../assets/imgs/user1.jpg'
-import coFounder from '../../assets/imgs/user2.jpg'
+import founder from '../../assets/imgs/director.jpeg'
+import coFounder from '../../assets/imgs/md.jpeg'
 import banner from '../../assets/imgs/banner6.jpg'
 
 
@@ -18,16 +18,16 @@ const SocialIcons = () => {
 const staffs = [
     {
         id: 1,
-        name: 'Shahruzaman',
+        name: 'Bethelhm Mamo Pius',
         image: founder,
-        designation: 'Founder'
+        designation: 'Director'
     },
 
     {
         id: 2,
-        name: 'Abdulrahman Dauda',
+        name: 'Mr. Jonathan Ugochukwu Pius',
         image: coFounder,
-        designation: 'Co-Founder'
+        designation: 'Managing Director'
     },
 ]
 
@@ -39,7 +39,7 @@ const staffs = [
                     <img src={name.image} className=' h-[250px] rounded-full object-cover w-[250px]' alt="" />
                     <div className=" flex justify-center flex-col items-center">
                         <p className=' font-semibold text items-center justify-center-sm group-hover:text-white'>{name.designation}</p>
-                        <p className='group-hover:text-white text-xl'>{name.name}</p>
+                        <p className='group-hover:text-white text-base'>{name.name}</p>
                         <SocialIcons />
                     </div>
                     </div>

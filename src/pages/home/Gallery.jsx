@@ -16,13 +16,13 @@ const galleries = [
 
     {
         id: 2,
-        msg: 'Somthing Good',
+        msg: 'Raw Materials ',
         img: image3
     },
 
     {
         id: 3,
-        msg: 'Somthing Good',
+        msg: 'Other Products',
         img: image1
     },
 

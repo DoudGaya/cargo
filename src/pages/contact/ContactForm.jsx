@@ -5,39 +5,44 @@ import bannerImage from "../../assets/imgs/banner6.jpg"
 const locations = [
     {
         id: 1,
-        country: 'Turkiye Address',
+        country: 'Nigerian Addresses',
         state: 'Kano',
 
         offices: [
             {
                 state: 'Kano Office',
-                address: 'Block z-3, Phase III, Kundila Housing Estate, Tarauni Kano, Kano, Nigeria '
+                address: 'No. 1 KAARA STREET, OFF OSOLO WAY. AJAO  ESTATE. . 7/8. BUS STOP. AIRPORT ROAD.  LAGOS. '
             },
 
             {
                 state:'Abuja Office',
-                address: 'Block z-3, Phase III, Kundila Housing Estate, Tarauni Kano, Kano, Nigeria '
+                address: 'TM.YOLA IMPORT AND EXPORT NIGERIALIMITED NO 10 BALARABIU HOUSE ALONG FIRST BANK KWARI MARKET KANO NIGERIA'
             }
         ],
 
         contacts: [
-            '+234 906 224 9834',
-            '+234 906 224 9834'
+            '+2348022760774',
+            '+2348023727922'
         ]
     },
 
     {
         id: 1,
-        country: 'Nigeria',
+        country: 'Turkey Addresses',
         offices: [
             {
-                state: 'Kano',
-                address: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, consequuntur?'
+                state: 'Head Office',
+                address: 'Aksaray Mah inkılap cad.oto ishanı No:43/33 Aksaray-fatih/ISTANBUL/TYRKEY'
             },
 
             {
-                state:'Abuja',
-                address: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, consequuntur?'
+                state:'Warehouse',
+                address: 'Abdüllatif paşa sokak /Blok Lale Palas Apt.No22/A Aksaray Fatih/İSTANBUL Turkey'
+            },
+
+            {
+                state:'Depo',
+                address: 'Aksaray Mah Sinekli Bahçe Araligi sk altan Apt 1 No:3 Fatih İstanbul Turkey'
             }
         ],
         contacts: [
@@ -67,10 +72,10 @@ const address = locations.map((one) => {
                         { one.offices.map( office => { 
                             return (
                                 <>
-                                 <div className=" text-gray-900 leading-7 my-4">
-                                    {/* <h3 className=" font-semibold my-2">{office.state}</h3> */}
+                                 <div className=" text-gray-900  leading-7 my-4">
+                                    <h3 className=" font-semibold my-2">{office.state}</h3>
                                     <ul className=" list-decimal">
-                                        <l className=" text-sm"> {office.address}</l>
+                                        <l className=" text-sm lowercase"> {office.address}</l>
                                     </ul>
                                 </div>
                                 </>
@@ -98,43 +103,9 @@ const ContactForm = () => {
         <>
           <div className=" flex w-full justify-center mt-20 bg-cover" style={{ backgroundImage: `url(${bannerImage})` }}>
          <div className="backdrop-blur-md w-full">
-        <div className=" grid grid-cols-1 md:grid-cols-2 w-full md:w-11/12 mx-auto shadow-lg ">
-                <div className=" flex flex-col space-y-6 py-10 px-10 ">
+        <div className=" flex w-10/12 py-10 mx-auto ">
+                <div className="grid grid-cols-2 gap-x-6">
                     {address}
-                </div>
-                <div className=" flex bg-sky-900/70  flex-col space-y-4 md:px-10 px-6 py-10 md:pt-20">
-                    <div className=" flex flex-col w-11/12 mx-auto">
-                        <p className=" text-2xl font-semibold text-white">Get In touch </p>
-                        <small className=" text-base tracking-wider text-white ">Send us a message here </small>
-                    </div>
-                    <form className="w-11/12 mx-auto flex flex-col space-y-4">
-                     <div className=" flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-3">
-                     <div className=" flex space-y-1 w-full">
-                        <label tmlFor="name" className=" hidden text-lg text-white">Your Name</label>
-                        <input type="text" placeholder="Your first name" className=" w-full px-4 py-2 bg-gray-200 border border-gray-700 outline-none" />
-                      </div>
-                      <div className=" flex space-y-1 w-full">
-                        <label htmlFor="name" className=" hidden text-lg text-white">Email address</label>
-                        <input type="text" placeholder="Your last name" className=" w-full px-4 py-2 bg-gray-200 border border-gray-700 outline-none" />
-                      </div>
-                     </div>
-
-                     <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-3">
-                     <div className=" flex space-y-1 w-full">
-                        <label tmlFor="name" className=" hidden text-lg text-white ">Phone Number</label>
-                        <input type="text" placeholder="Phone number" className=" w-full px-4 py-2 bg-gray-200 border border-gray-700 outline-none" />
-                      </div>
-                      <div className=" flex space-y-1 w-full">
-                        <label htmlFor="name" className=" hidden text-lg text-white ">Email address</label>
-                        <input type="text" placeholder="Email address" className=" w-full px-4 py-2 bg-gray-200 border border-gray-700 outline-none" />
-                      </div>
-                     </div>
-
-                      <div className=" flex flex-col space-y-1">
-                        <label htmlFor="name" className=" text-lg text-white ">Message</label>
-                        <textarea type="text" cols="30" rows="7" placeholder="Send us a message..." className=" px-4 py-2 bg-gray-200 border border-gray-700 outline-none" ></textarea>
-                      </div>
-                    </form>
                 </div>
         </div>
         </div>
