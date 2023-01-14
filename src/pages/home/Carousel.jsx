@@ -1,37 +1,13 @@
 
-import { React, useState, useEffect } from 'react';
+import { React } from 'react';
 // import logoImage from '../../assets/imgs/logo-image.jpg'
-import banner from '../../assets/imgs/banner.svg'
+import banner from '../../assets/imgs/large_banner.jpg'
 import logo from '../../assets/imgs/logo_nav.png'
 // import logoBanner from '../../assets/imgs/logo-banner.png'
 
-const ImageCarousel = ({ images }) => {
-  const [index, setIndex] = useState(0);
-
-  const handleNext = () => {
-    const nextIndex = index + 1;
-    if (nextIndex < images.length) {
-      setIndex(nextIndex);
-    } else {
-      setIndex(0)
-    }
-  };
+const ImageCarousel = () => {
 
 
-  useEffect( () => {
-    //  setti(handleNext, 3000)
-    setTimeout(handleNext, 4000);
-  })
-
-
-  const handlePrevious = () => {
-    const prevIndex = index - 1;
-    if (prevIndex >= 0) {
-      setIndex(prevIndex);
-    } else {
-      setIndex( images.length - 1)
-    }
-  };
 
   return (
     <div className='w-full h-full saturate-50 bg-cover bg-center flex bg-no-repeat bg-fixed bg-transparent transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${banner})`}} >
@@ -47,7 +23,7 @@ const ImageCarousel = ({ images }) => {
             {/* <div className=" md:border-l-2 md:pl-6 py-4 md:text-start text-center items-center md:items-start flex flex-col">
                    <p className=' md:text-5xl font-anton tracking-wide md:text-start flex text-white'>Welcome to the Best Container Shipping <br /> Company in Turkey and Nigeria</p>
                    <p className=' font-banner md:text-xl text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo at tempora ut vel consectetur, soluta, odit maxime error dolor cumque alias eveniet possimus. </p>
-              </div>             */}
+              </div> */}
                 {/* <div className=" flex flex-col my-auto col-span-2  py-10 md:px-10">
                        <div className=" flex flex-col ">
                        <div className=" flex space-x-2">
@@ -77,7 +53,7 @@ const ImageCarousel = ({ images }) => {
           <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
         </svg>
       </button> */}
-        </div>
+        </div> 
     </div>
   );
 };

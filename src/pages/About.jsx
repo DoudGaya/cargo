@@ -7,7 +7,6 @@ import PageBanner from './generals/Banner'
 import Partners from "./about/Partners";
 
 
-
 const officeSections = [    
     {
         title: 'Turkey Office',
@@ -28,13 +27,7 @@ const officeSections = [
 ]
 
 
-
-
-
 const About = () => {
-
-
-
 
     return (
         <>
