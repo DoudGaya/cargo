@@ -7,7 +7,7 @@ const tesimo = [
         id: 1,
         // imagePath: user1,
         username: 'Abdulrahman Dauda Gaya',
-        designation: 'CEO Chemcider Inc',
+        designation: 'Chemcider Inc',
         message: 'I recently used Africa Global Cargo to ship goods across the country and it was a fantastic experience. The customer service was amazing and they made sure everything was taken care of quickly and efficiently. Highly recommend!"'
     },
 
@@ -22,7 +22,7 @@ const tesimo = [
     {
         id: 3,
         // imagePath: user1,
-        username: 'Sadiq Ismail ',
+        username: 'Sadiq Kabir ',
         designation: 'CEO Chemcider Inc',
         message: 'Africa Global Cargo made my business a lot easier by providing quick and reliable shipping services. Their rates are competitive and the customer service is top-notch. Highly recommend!'
     },
@@ -30,7 +30,7 @@ const tesimo = [
     {
         id: 4,
         // imagePath: user2,
-        username: 'Muhammad Saad',
+        username: 'Saad Bashir',
         designation: 'CEO Chemcider Inc',
         message: 'I recently used Africa Global Cargo to move some goods from one location to another and it was a great experience. They took care of everything quickly and efficiently, and the goods arrived in perfect condition. Highly recommend!'
     },

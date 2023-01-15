@@ -7,10 +7,10 @@ const AirCargo = () => {
         <PageBanner banner="Air Cargo" />
        <div className=" w-full  md:w-8/12 px-10 md:px-0 py-10 mx-auto">
 
-            <div className=" bg-gray-300 py-4 px-4 mb-3">
+            <div className=" bg-gray-300 dark:bg-black dark:text-white py-4 px-4 mb-3">
                 <h2 className=" uppercase text-xl">The Air Cargo</h2>
             </div>
-            <p className=" leading-8 ">
+            <p className=" leading-8 dark:text-white text-lg ">
             There are a few steps that may be involved in the process of cargo in a logistics and freight forwarding company like Africa Global:
                 Receiving the cargo: The first step in the process is to receive the cargo from the sender. This may involve coordinating with the sender to determine the pickup location and the type and quantity of the cargo being shipped.
                 Packaging and labeling: The next step is to properly package and label the cargo for shipping. This may involve using specialized packaging materials to ensure the safety and security of the cargo during transit.
