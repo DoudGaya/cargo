@@ -59,7 +59,7 @@ const Company = () => {
                         {ceo}
                     </div>
                 </div>
-                <div className=" col-span-1 px-4">
+                <div className=" col-span-1 md:px-4">
                     <div className=" bg-sky-700 px-10 py-20">
                         <h3 className=' text-2xl uppercase font-bold text-orange-500 my-3'>About Us</h3>
                         <p className=' text-white'>
