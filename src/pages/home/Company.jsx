@@ -60,7 +60,13 @@ const Company = () => {
                     </div>
                 </div>
                 <div className=" col-span-1 px-4">
-                    <form className=' flex flex-col space-y-2 bg-sky-900/70 py-8 px-6'>
+                    <div className=" bg-sky-700 px-10 py-20">
+                        <h3 className=' text-2xl uppercase font-bold text-orange-500 my-3'>About Us</h3>
+                        <p className=' text-white'>
+                            Africa Global is a leading logistics and freight forwarding company that offers customized solutions to its customers in Africa, with a focus on providing cost-effective services. The company has established reliable transportation routes to various African countries, especially Nigeria, and has a strong reputation as a trusted service provider. Africa Global works closely with its clients to understand their specific needs and develop comprehensive service plans to meet those requirements.
+                        </p>
+                    </div>
+                    {/* <form className=' flex flex-col space-y-2 bg-sky-900/70 py-8 px-6'>
                     <div className=" flex items-center space-x-4 ">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 stroke-2 text-white h-8">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -86,7 +92,7 @@ const Company = () => {
                             <label htmlFor="name" className=' text-sm text-white'>Phone Number</label>
                             <textarea name="message" id="" cols="20" placeholder='Send Us a Message' rows="5" className='py-2 px-4 outline-none'></textarea>
                         </div>
-                    </form>
+                    </form> */}
                     
                 </div>
             </div>

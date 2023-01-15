@@ -27,15 +27,19 @@ function closeServices() {
     return setServices(false)
 }
 
+
+const closeModal = () => {
+    return setNav(false)
+}
 const toggleNavbar = () => {
-   setNav( (prevNav) => !prevNav )
+   setNav((prevNav) => !prevNav )
 }
 
 
 const navSections = (
     <div className=" md:hidden flex flex-col bg-gray-900 h-[100vh] absolute z-50 w-full ">
         <div className=" py-4 px-6  flex justify-between  items-center text-center ">
-        <p className=" uppercase text-2xl font-semibold">Afrika Global</p>
+        <p className=" uppercase text-2xl font-semibold">Africa Global</p>
         <button className="" onClick={toggleNavbar}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -45,11 +49,11 @@ const navSections = (
         </div>
     <div className=" flex flex-col w-full h-full text-white p-10">
         <ul className=" flex flex-col space-y-4">
-            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Home</li>
-            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">About</li>
-            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Contact</li>
-            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Plane Cargo</li>
-            <li className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Shipping</li>
+            <Link to="/" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Home</Link>
+            <Link to="/about" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">About</Link>
+            <Link to="/contact" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Contact</Link>
+            <Link to="/aircargo" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Plane Cargo</Link>
+            <Link to="/shipping" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Shipping</Link>
         </ul>
 
         <div className=" my-10 rounded-3xl p-6 overflow-hidden">
@@ -69,7 +73,7 @@ const navSections = (
         <div className="flex justify-between w-full px-6 py-6 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
             <div className="py-2 flex items-center md:space-x-4">
                 {/* <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" /> */}
-                <p className=" uppercase font-bold md:text-3xl">Afrika Global</p>
+                <p className=" uppercase font-bold md:text-3xl">Africa Global</p>
             </div>
             <ul className="hidden md:flex flex-row  space-x-12">
                 <li className="items-center flex ">

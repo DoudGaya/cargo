@@ -5,7 +5,8 @@ export default function AboutTheCompany() {
               <div className=" w-full px-6 md:px-0 md:w-7/12 my-10 mx-auto flex flex-col justify-center item-center text-center ">
                 <p className='text-orange-500 text-3xl font-anton pb-6'>Why Us</p>
                 <p className=' text-base text-gray-800 dark:text-gray-200'>
-                Africa Global is a leading logistics and freight forwarding company that offers customized solutions to its customers in Africa, with a focus on providing cost-effective services. The company has established reliable transportation routes to various African countries, especially Nigeria, and has a strong reputation as a trusted service provider. Africa Global works closely with its clients to understand their specific needs and develop comprehensive service plans to meet those requirements.
+                Since our establishment in 2013, Africa global has been recognized as one of the most successful independent freight forwarding logistics company in the business.
+                Africa glocal logistics therefore ranks number one, publications have citied Africa global logistics as one of the largest in terms of number of offices, employees and wide range service portfolio, most reliable companies in the market.
                 </p>
                 <div className=" grid grid-cols-1 md:grid-cols-3 my-10 gap-10">
                     <div className=" flex flex-col bg-gradient-to-r bg-gray-200 rounded-lg py-4 space-y-1">

@@ -105,7 +105,7 @@ const ContactForm = () => {
           <div className=" flex w-full justify-center mt-20 bg-cover" style={{ backgroundImage: `url(${bannerImage})` }}>
          <div className="backdrop-blur-md w-full">
         <div className=" flex w-10/12 py-10 mx-auto ">
-                <div className="grid grid-cols-2 gap-x-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-6">
                     {address}
                 </div>
         </div>

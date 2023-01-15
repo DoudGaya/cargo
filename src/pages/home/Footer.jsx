@@ -8,7 +8,13 @@ const Footer = () => {
                
                 <div className=" col-span-1 border-l px-4 border-gray-700 md:col-span-2 font-main ">
                     <h2 className=" font-bold uppercase">ABOUT US</h2>
-                    <p className="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis accusantium nostrum et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis aut dolore maxime, recusandae quibusdam repudiandae saepe est? Deleniti, harum. Totam consequuntur assumenda dolorum eveniet sed ea vero?</p>
+                    <p className="mt-4">
+                    Africa Global is a leading logistics and freight forwarding company that 
+                    offers customized solutions to its customers in Africa, with a focus on providing cost-effective services. 
+                    The company has established reliable transportation routes to various African countries, especially Nigeria,
+                    and has a strong reputation as a trusted service provider. Africa Global works closely with its 
+                    clients to understand their specific needs and develop comprehensive service plans to meet those requirements.
+                    </p>
                 </div>
 
                 <div className=" flex flex-col border-l px-4 border-gray-700">

@@ -8,7 +8,8 @@ import Newsletter from "./home/Newsletter";
 import Gallery from "./home/Gallery";
 import AboutTheCompany from "./about/AbousTheCompany";
 
-const Home = () =>{
+const Home = () => {
+
     return (
         <>
            <div className="flex flex-col w-full ">
@@ -23,6 +24,7 @@ const Home = () =>{
         </div>
         </>
     )
+
 }
 
 export default Home
