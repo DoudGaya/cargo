@@ -73,7 +73,7 @@ const navSections = (
         <div className="flex justify-between w-full px-6 py-6 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
             <div className="py-2 flex items-center md:space-x-4">
                 {/* <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" /> */}
-                <p className=" uppercase font-bold md:text-3xl">Africa Global</p>
+                <p className=" uppercase font-bold text-2xl">Africa Global</p>
             </div>
             <ul className="hidden md:flex flex-row  space-x-12">
                 <li className="items-center flex ">

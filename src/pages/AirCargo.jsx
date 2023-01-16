@@ -7,8 +7,8 @@ const AirCargo = () => {
         <PageBanner banner="Air Cargo" />
        <div className=" w-full  md:w-8/12 px-10 md:px-0 py-10 mx-auto">
 
-            <div className=" bg-gray-300 dark:bg-black dark:text-white py-4 px-4 mb-3">
-                <h2 className=" uppercase text-xl">The Air Cargo</h2>
+            <div className=" bg-orange-400 dark:bg-black dark:text-white py-4 px-4 mb-3">
+                <h2 className=" uppercase font-bold text-xl">The Air Cargo</h2>
             </div>
             <p className=" leading-8 dark:text-white text-lg ">
             There are a few steps that may be involved in the process of cargo in a logistics and freight forwarding company like Africa Global:
