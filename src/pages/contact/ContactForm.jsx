@@ -11,12 +11,12 @@ const locations = [
 
         offices: [
             {
-                state: 'Kano Office',
+                state: 'Lagos Address',
                 address: 'No. 1 KAARA STREET, OFF OSOLO WAY. AJAO  ESTATE. . 7/8. BUS STOP. AIRPORT ROAD.  LAGOS. '
             },
 
             {
-                state:'Abuja Office',
+                state:'Kano Office',
                 address: 'TM.YOLA IMPORT AND EXPORT NIGERIALIMITED NO 10 BALARABIU HOUSE ALONG FIRST BANK KWARI MARKET KANO NIGERIA'
             }
         ],
@@ -105,8 +105,26 @@ const ContactForm = () => {
           <div className=" flex w-full justify-center mt-20 bg-cover" style={{ backgroundImage: `url(${bannerImage})` }}>
          <div className="backdrop-blur-md w-full">
         <div className=" flex w-10/12 py-10 mx-auto ">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-6">
-                {address}
+            <div className="grid grid-cols-1 md:grid-cols-4 w-full gap-4">
+            <div className=" flex pt-6 px-4 rounded-lg m-4 flex-col bg-gray-100 w-full">
+                    <p className=" text-lg font-banner" >Nigeria, <span className=" text-sm">Kano</span> </p>
+                    <div className="flex flex-col px-4 text-sm ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, incidunt.
+                    </div>
+                    <div className=" bg-gray-300 my-2 rounded-lg px-4 py-2">
+                    <p>08062249834</p>
+                    </div>
+                </div>
+                <div className=" flex py-6 px-4 rounded-lg m-4 flex-col bg-gray-100 w-full">
+                    some goos stuffs
+                </div>
+                <div className=" flex py-6 px-4 rounded-lg m-4 flex-col bg-gray-100 w-full">
+                    some goos stuffs
+                </div>
+                <div className=" flex py-6 px-4 rounded-lg m-4 flex-col bg-gray-100 w-full">
+                    some goos stuffs
+                </div>
+                {/* {address} */}
             </div>
         </div>
         </div>

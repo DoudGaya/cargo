@@ -48,6 +48,7 @@ const navSections = (
         </button>
         </div>
     <div className=" flex flex-col w-full h-full text-white p-10">
+    <a href="tel:+0905393809466" className=" px-6 py-4 mb-2 bg-[#1ca0ba] rounded-lg font-semibold ">HOT LINE</a>
         <ul className=" flex flex-col space-y-4">
             <Link to="/" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Home</Link>
             <Link to="/about" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">About</Link>
@@ -108,7 +109,7 @@ const navSections = (
                 </li>
 
                 <li className="items-center flex ">
-                    <a href="tel:+090 539 380 9466" className=" px-6 py-2 bg-[#fac919] font-semibold ">+090 539 380 9466</a>
+                    <a href="tel:+0905393809466" className=" px-6 py-2 bg-[#1ca0ba]  font-semibold ">Hot Line</a>
                 </li>
             </ul>
 
