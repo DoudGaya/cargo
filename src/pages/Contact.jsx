@@ -20,13 +20,13 @@ const contact = [
         country: 'Nigeria',
         state: 'Lagos',
         address: 'No. 1 KAARA STREET, OFF OSOLO WAY. AJAO  ESTATE. 7/8. BUS STOP. AIRPORT ROAD. LAGOS.',
-        contact: ['2348061975050', '2348158949110']
+        contact: ['+2348061975050', '+2348158949110']
     },
     {
         country: 'Nigeria',
         state: 'Kano',
-        address: 'TM.YOLA IMPORT AND EXPORT NIGERIALIMITED NO 10 BALARABIU HOUSE ALONG FIRST BANK KWARI MARKET KANO NIGERIA',
-        contact: ['2348022760774', '2348023727922']
+        address: 'TM.YOLA IMPORT AND EXPORT NIGERIA LIMITED NO 10 BALARABIU HOUSE ALONG FIRST BANK KWARI MARKET KANO NIGERIA',
+        contact: ['+2348022760774', '+2348023727922']
     },
 ]
 
