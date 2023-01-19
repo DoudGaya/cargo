@@ -1,7 +1,7 @@
 
 import { React } from 'react';
 // import logoImage from '../../assets/imgs/logo-image.jpg'
-import banner from '../../assets/imgs/large_banner.jpg'
+import banner from '../../assets/imgs/carg.png'
 import logo from '../../assets/imgs/logo_nav.png'
 // import logoBanner from '../../assets/imgs/logo-banner.png'
 
@@ -15,7 +15,7 @@ const ImageCarousel = () => {
         <div className="flex w-full flex-col md:flex-row mt-32  md:my-auto items-center space-x-5 ">
 
           <div className="">
-            <img src={logo} alt="" className='w-[300px] h-[300px] shadow-lg rounded-lg' srcSet="" />
+            <img src={logo} alt="" className='w-[300px] opacity-80 md:opacity-30 h-[300px] shadow-lg rounded-lg' srcSet="" />
           </div>
         {/* <div className=" md:h-[200px] flex-none md:w-[200px] h-32 w-32 p-4 overflow-hidden bg-white rounded-2xl ">
                 <img src={logo} className=" " alt="" />

@@ -1,9 +1,7 @@
 
 import bannerImage from "../../assets/imgs/banner6.jpg"
 
-
-
-const ContactForm = ( {contact}) => {
+const AddressCard = ( {contact}) => {
 
     return (
         <>
@@ -11,11 +9,10 @@ const ContactForm = ( {contact}) => {
          <div className="backdrop-blur-md w-full">
         <div className=" flex w-10/12 py-10 mx-auto ">
             <div className="grid grid-cols-1 md:grid-cols-4 w-full gap-4">
-
                 {
                     contact.map( address => {
                         return (
-                            <div className=" flex pt-6 pb-4 px-4 rounded-lg m-4 space-y-4  flex-col bg-gray-100 w-full">
+                            <div className=" flex pt-6 pb-4 px-4 rounded-lg space-y-4  flex-col bg-gray-100 w-full">
                                <div className=" flex items-center space-x-2">
                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -23,8 +20,8 @@ const ContactForm = ( {contact}) => {
                                 </svg>
                                 <p className=" text-lg font-banner" >{address.country}, <span className=" text-sm text-sky-600">{address.state}</span> </p>
                                </div>
-                            <div className="flex flex-col px-4 text-sm ">
-                                {address.address.toLowerCase()}
+                            <div className="flex flex-col px-4 text-sm  ">
+                                {address.address}
                             </div>
                             <div className="flex flex-col space-y-1 rounded-lg">
                             {
@@ -39,7 +36,7 @@ const ContactForm = ( {contact}) => {
                                 </div>
                                ) 
                             }
-                                )
+                            )
                             }
                             </div>
                     </div>
@@ -55,7 +52,7 @@ const ContactForm = ( {contact}) => {
 }
 
 
-export default ContactForm
+export default AddressCard
 
 
 

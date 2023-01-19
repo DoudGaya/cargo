@@ -48,7 +48,12 @@ const navSections = (
         </button>
         </div>
     <div className=" flex flex-col w-full h-full text-white p-10">
-    <a href="tel:+0905393809466" className=" px-6 py-4 mb-2 bg-[#1ca0ba] rounded-lg font-semibold ">HOT LINE</a>
+   <div className=" flex  items-center w-full bg-[#1ca0ba] px-6 py-4 mb-2  rounded-lg space-x-3">
+   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 flex-none h-8">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+    </svg>
+    <a href="tel:+0905393809466" className="  font-semibold ">HOT LINE</a>
+   </div>
         <ul className=" flex flex-col space-y-4">
             <Link to="/" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">Home</Link>
             <Link to="/about" onClick={closeModal} className=" w-full border-l-2 py-3 text-xl px-4 bg-gray-700">About</Link>
@@ -69,7 +74,8 @@ const navSections = (
 
        
        
-        <div className=" text-white bg-gradient-to-b from-black/90 flex-col to bg-transparent z-20 fixed top-0 flex justify-between w-full dark:bg-black dark:text-white">
+        <div className="  bg-white/60 from-black/90 flex-col z-20 fixed top-0 flex justify-between w-full dark:bg-black dark:text-white">
+        {/* <div className=" text-white bg-gradient-to-b from-black/90 flex-col z-20 fixed top-0 flex justify-between w-full dark:bg-black dark:text-white"> */}
             { nav ? navSections : ''}
         <div className="flex justify-between w-full px-6 py-6 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
             <div className="py-2 flex items-center md:space-x-4">
