@@ -1,13 +1,13 @@
 import PageBanner from "./generals/Banner";
+import Steps from "./shipping/Steps";
 
 
 const Shipping = () => {
     return (
         <>
         <PageBanner banner="Air Cargo" />
-        
-        <div className=" w-full  md:w-8/12 px-10 md:px-0 py-10 mx-auto">
-
+<div className=" w-full  md:w-8/12 px-10 md:px-0 py-10 mx-auto">
+    <Steps />
 <div className=" bg-orange-400 dark:bg-black dark:text-white py-4 px-4 mb-3">
     <h2 className=" uppercase font-bold text-xl">Shipping </h2>
 </div>

@@ -47,7 +47,7 @@ const Socials = () => {
     })
     return (
         <>
-            <div className="w-8/12 bg-white/40 bg-sky-900 drop-shadow-lg shadow-sky-900  py-4 grid grid-cols-1 md:grid-cols-4 px-10 gap-3 mx-auto">
+            <div className="md:w-8/12 w-10/12 bg-white/40 bg-sky-900 drop-shadow-lg shadow-sky-900  py-4 grid grid-cols-1 md:grid-cols-4 px-10 gap-3 mx-auto">
                 {socia}
             </div>
         </>

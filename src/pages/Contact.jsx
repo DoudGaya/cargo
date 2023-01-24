@@ -8,13 +8,13 @@ const contact = [
         country: 'Turkey',
         state: 'Istanbul',
         address: 'Head Office: Aksaray Mha Inkılap Cad Oto Isyanı No 43/33 Aksaray Fatih/İstanbul/Turkey',
-        contact: ['+902125872381', '+0905393809466']
+        contact: ['+902125872381', '+905393809466']
     },
     {
         country: 'Turkey',
         state: 'Istanbul',
         address: 'Branch: Abdüllatif Pasa Sokak Blok Lale Palas Apt No 22/A Aksaray Fatih/Istanbul Turkey',
-        contact: ['+902125862730', '+0905325016879']
+        contact: ['+902125862730', '+905325016879']
     },
     {
         country: 'Nigeria',
