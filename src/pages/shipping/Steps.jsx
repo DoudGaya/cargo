@@ -1,6 +1,5 @@
-import bannerImg from '../../assets/imgs/cargo.png'
-const Steps = () => {
 
+const Steps = ( { bannerImg } ) => {
 
   const step = [
     {
@@ -53,13 +52,16 @@ const Steps = () => {
      <div className=" flex flex-col dark:text-white  text-gray-900 items-center space-y-6">
      <div className="grid gap-x-6 py-6 grid-cols-1 gap-y-6 md:gap-y-0 md:grid-cols-2">
           <div className="">
-            <img src={bannerImg} alt="" className=' rounded-md' srcSet="" />
+            <img src={bannerImg} alt="" className=' rounded-md h-[300px] w-full object-cover' srcSet="" />
           </div>
           <div className="flex flex-col space-y-3 my-auto">
             <p className=' text-xl text-sky-900 md:text-3xl font-banner font-bold'>Your Shipping Partner</p>
             <p className='text-xl md:text-2xl'>We are comitted to providing fast and efficient shipping services to all our customers in the best way possible </p>
             <div className=" flex items-start py-2">
-            <a href="tel:+" className='text-xl px-3 py-2 rounded-md bg-sky-500  flex'>Talk To Someone</a>
+            <a href="tel:+0905393809466" className='text-lg text-white items-center space-x-3 px-3 py-2 rounded-md bg-sky-500  flex'>
+              {step[0].icon}
+              <div className="">Talk To Someone</div>
+              </a>
             </div>
            
           </div>

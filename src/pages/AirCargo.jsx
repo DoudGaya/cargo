@@ -1,4 +1,7 @@
 import PageBanner from "./generals/Banner";
+import Steps from "./shipping/Steps";
+import bannerImg from '../assets/imgs/banner3.jpg';
+// import plane from '../../assets/imgs/partners/banner3.jpg'
 
 
 const AirCargo = () => {
@@ -6,7 +9,7 @@ const AirCargo = () => {
         <>
         <PageBanner banner="Air Cargo" />
        <div className=" w-full  md:w-8/12 px-10 md:px-0 py-10 mx-auto">
-
+        <Steps bannerImg={bannerImg} />
             <div className=" bg-orange-400 dark:bg-black dark:text-white py-4 px-4 mb-3">
                 <h2 className=" uppercase font-bold text-xl">The Air Cargo</h2>
             </div>
