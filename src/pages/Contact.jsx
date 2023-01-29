@@ -3,18 +3,19 @@ import Maps from './contact/Map'
 import AddressCard from "./contact/AddressCard";
 
 
+
 const contact = [
     {
         country: 'Turkey',
         state: 'Istanbul',
-        address: 'Head Office: Aksaray Mha Inkılap Cad Oto Isyanı No 43/33 Aksaray Fatih/İstanbul/Turkey',
-        contact: ['+902125872381', '+905393809466']
+        address: 'HEAD OFFICE: ARKSARY MAH.INKLAP CAD. OTO ÍŞHANI. No: 43/33 AKSARAY-FATIH/TURKKEY',
+        contact: ['905325016879', '905393809466']
     },
     {
         country: 'Turkey',
         state: 'Istanbul',
-        address: 'Branch: Abdüllatif Pasa Sokak Blok Lale Palas Apt No 22/A Aksaray Fatih/Istanbul Turkey',
-        contact: ['+902125862730', '+905325016879']
+        address: 'BRANCH: ABDULLATIFPASA SOKAK, B/ BLOCK LALE PALAS APT. NO.22/ AKSARAY/ FATIH/ ISTANBUL',
+        contact: ['905522768481', '905372005134']
     },
     {
         country: 'Nigeria',
@@ -35,13 +36,13 @@ const Contact = () => {
     return (
         <>
         <div className="">
-        {/* <ContactBanner /> */}
-        <PageBanner banner="Contact" />
-        <div className="w-10/12 mx-auto">
-            <Maps />
-        </div>
-            <AddressCard contact={contact} />
-        </div>
+            {/* <ContactBanner /> */}
+            <PageBanner banner="Contact" />
+            <div className="w-10/12 mx-auto">
+                <Maps />
+            </div>
+                <AddressCard contact={contact} />
+            </div>
         </>
     )
 }

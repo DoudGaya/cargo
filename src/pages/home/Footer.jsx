@@ -1,6 +1,35 @@
-
-
+import socials from "../../socials";
+import { useState } from "react";
 const Footer = () => {
+
+const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+})
+
+const gettingValues = (event) => {
+    const {value, name} = event.target
+    setFormData((prevForm) => {
+       return{...prevForm, [name]: value }
+    })
+    console.log(formData)
+}
+
+
+const SocialLinkCard = ({item }) => {
+    return (
+            <li  className="">
+                <a href={item.link}  className=" flex items-center space-x-2 hover:underline ">
+                   <div className=" fill-fuchsia-50">
+                   {item.svg}
+                   </div>
+                    {/* <box-icon name='instagram' type='logo' className="" rotate='90' color='#ffffff' ></box-icon> */}
+                   <span>{item.name}</span>
+                </a>
+            </li>
+    )
+}
     return (
         <>
         <div className=" w-full h-full text-gray-100 flex flex-col bg-black">
@@ -16,11 +45,11 @@ const Footer = () => {
                     clients to understand their specific needs and develop comprehensive service plans to meet those requirements.
                     </p>
                 </div>
-
+                
                 <div className=" flex flex-col border-l px-4 border-gray-700">
                     <p className=" uppercase font-bold">Quick LINKS </p>
                     <ul className="font-main flex mt-4 flex-col space-y-2">
-                        <li className=" ">
+                        <li className="">
                             <a href="" className=" hover:underline">
                                 Home
                             </a>
@@ -46,37 +75,9 @@ const Footer = () => {
                  <div className=" flex flex-col border-l px-4 border-gray-700">
                     <p className=" uppercase font-bold">Social LINKS </p>
                     <ul className="font-main flex mt-4 flex-col space-y-2">
-                        <li className=" ">
-                            <a href="" className=" flex items-center space-x-2 hover:underline ">
-                                <box-icon name='instagram' type='logo' className="" rotate='90' color='#ffffff' ></box-icon>
-                               <span>Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" className="flex items-center space-x-2 hover:underline">
-                                <box-icon name='whatsapp' type='logo' color='#ffffff' ></box-icon>
-                                <span>WhatsApp</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" className=" flex items-center space-x-2 hover:underline">
-                            <box-icon name='twitter' type='logo'  color='#ffffff' ></box-icon>
-                                <span>Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" className=" flex items-center space-x-2 hover:underline">
-                                <box-icon name='facebook' type='logo' color='#ffffff' ></box-icon>
-                                <span>Facebook</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="" className=" flex items-center space-x-2 hover:underline">
-                                <box-icon type='logo' color='#ffffff' name='linkedin'></box-icon>
-                                <span>LinkedIn</span>
-                            </a>
-                        </li>
+                       {
+                        socials.map(item => <SocialLinkCard item={item} key={item.id} /> )
+                       }
                     </ul>
                 </div>
                 <div className=" flex flex-col">
@@ -84,16 +85,16 @@ const Footer = () => {
                     <form className=" flex flex-col space-y-2 w-full mt-4 ">
                         <div>
                             <label htmlFor="name" className="hidden">Name</label>
-                            <input type="text" placeholder="Name" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" />
+                            <input type="text" onChange={gettingValues} name="name" placeholder="Name" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" />
                         </div>
                         <div>
                             <label htmlFor="name" className="hidden">Name</label>
-                            <input type="text" placeholder="Email" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" />
+                            <input type="text" onChange={gettingValues} name="email" placeholder="Email" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" />
                         </div>
 
                         <div>
                             <label htmlFor="name" className="hidden">Name</label>
-                            <textarea type="text" cols="30" rows="3" placeholder="Message" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" ></textarea>
+                            <textarea type="text" onChange={gettingValues} name="message" cols="30" rows="3" placeholder="Message" className=" px-2 caret-gray-700 text-black bg-gray-300 outline-none w-full flex py-1" ></textarea>
                         </div>
                     </form>
                 </div>

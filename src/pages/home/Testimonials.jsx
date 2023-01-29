@@ -37,29 +37,26 @@ const tesimo = [
 ]
 
 
+const UserCard = ({ item }) => {
+    return (
+        <div key={item.id} className=" flex flex-col space-y-4 bg-white shadow-md backdrop-blur-md px-4 py-8 rounded-lg">
+            <div className=" p-2 rounded-full flex ">
+            <div className=" flex flex-col justify-center px-3">
+                <p className=" font-semibold text-sm text-black">{item.username}</p>
+                <p className=" text-gray-800 ">{item.designation}</p>
+            </div>
+            </div>
+            <div className=" px-4 text-gray-800">
+                <p className=" text-sm ">{item.message}</p>
+            </div>
+        </div>
+    )
+}
+
+
 export default function Testimonials() {
+    const testimonials = tesimo.map( item => <UserCard item={item} key={item.id} /> )
 
-
-    const testimonials = tesimo.map( item => {
-        return (
-            <>
-                    <div className=" flex flex-col space-y-4 bg-white shadow-md backdrop-blur-md px-4 py-8 rounded-lg">
-                        <div className=" p-2 rounded-full flex ">
-                        {/* <div className=" h-16 overflow-hidden w-16 bg-gray-100 rounded-full">
-                            <img src={item.imagePath} alt="" srcset="" />
-                        </div> */}
-                        <div className=" flex flex-col justify-center px-3">
-                            <p className=" font-semibold text-sm text-black">{item.username}</p>
-                            <p className=" text-gray-800 ">{item.designation}</p>
-                        </div>
-                        </div>
-                        <div className=" px-4 text-gray-800">
-                            <p className=" text-sm ">{item.message}</p>
-                        </div>
-                    </div>
-            </>
-        )
-    })
     return (
         <>
          <div className="w-full flex flex-col bg-gray-800 text-white py-20 space-y-10">

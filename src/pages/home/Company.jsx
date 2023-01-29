@@ -3,22 +3,26 @@ import coFounder from '../../assets/imgs/md.jpeg'
 import banner from '../../assets/imgs/banner6.jpg'
 
 
-const SocialIcons = () => {
-    return (
-        <>
-        <div className="w-full flex flex-row justify-around">
-            <a href="#">
+const Founder = ( { staffs } ) => {
 
-            </a>
-        </div>
-        </>
+    return (
+        <div  className=" w-full  px-10 mx-auto flex flex-col ">
+        <div className=" flex flex-col items-center mx-auto">
+            <img src={staffs.image} className=' h-[250px] rounded-full object-cover w-[250px]' alt="" />
+            <div className=" flex justify-center flex-col items-center">
+                <p className=' font-semibold text items-center justify-center-sm group-hover:text-white'>{staffs.designation}</p>
+                <p className='group-hover:text-white text-base'>{staffs.name}</p>
+                {/* <SocialIcons /> */}
+            </div>
+            </div>
+    </div>
     )
 }
 
 const staffs = [
     {
         id: 1,
-        name: 'Bethelhm Mamo Pius',
+        name: 'Bethlhem Mamo Pius',
         image: founder,
         designation: 'Director'
     },
@@ -30,22 +34,8 @@ const staffs = [
         designation: 'Managing Director'
     },
 ]
-
-    const ceo = staffs.map( name => {
-        return (
-            <>
-             <div key={name.id} className=" w-full  px-10 mx-auto flex flex-col ">
-                <div className=" flex flex-col items-center mx-auto">
-                    <img src={name.image} className=' h-[250px] rounded-full object-cover w-[250px]' alt="" />
-                    <div className=" flex justify-center flex-col items-center">
-                        <p className=' font-semibold text items-center justify-center-sm group-hover:text-white'>{name.designation}</p>
-                        <p className='group-hover:text-white text-base'>{name.name}</p>
-                        <SocialIcons />
-                    </div>
-                    </div>
-                </div>
-            </>
-        )
+    const ceo = staffs.map(name => {
+        return <Founder key={name.id} staffs={name} />
     })
 
 const Company = () => {

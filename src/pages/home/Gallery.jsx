@@ -28,17 +28,20 @@ const galleries = [
 
 ]
 
-const card = galleries.map( (pic) => {
+
+const Product = ({ pic }) => {
     return (
-        <>
-             <div key={pic.id} className=" h-[300px] relative w-full md:w-[300px]  bg-cover">
-                    <img src={pic.img} className=" h-full" alt="" />
-                    <div className=" dark:bg-gray-900 bg-[#F3F3F3] border-y-2 border-r-2 border-gray-500 font-main text-sm absolute w-10/12 py-4 rounded-r-full px-4 bottom-10 items-center justify-center ">
-                        <span className=" border-l-2 px-3 border-gray-700 cursor-pointer hover:scale-100 transition-all transform">  {pic.msg}</span>
-                    </div>
-             </div>
-        </>
+        <div key={pic.id} className=" h-[300px] relative w-full md:w-[300px]  bg-cover">
+        <img src={pic.img} className=" h-full" alt="" />
+        <div className=" dark:bg-gray-900 bg-[#F3F3F3] border-y-2 border-r-2 border-gray-500 font-main text-sm absolute w-10/12 py-4 rounded-r-full px-4 bottom-10 items-center justify-center ">
+            <span className=" border-l-2 px-3 border-gray-700 cursor-pointer hover:scale-100 transition-all transform">  {pic.msg}</span>
+        </div>
+ </div>
     )
+}
+
+const card = galleries.map( (pic) => {
+    return <Product pic={pic} key={pic.id} />
 })
 
 
