@@ -38,8 +38,11 @@ const toggleNavbar = () => {
 
 const navSections = (
     <div className=" md:hidden flex flex-col bg-gray-900 h-[100vh] absolute z-50 w-full ">
-        <div className=" py-4 px-6  flex justify-between  items-center text-center ">
-       <Link to="/"> <p className=" uppercase text-white text-2xl font-semibold">Africa Global</p></Link>
+        <div className=" pt-10 px-6  flex justify-between  items-center text-center ">
+      <div className=" flex flex-col items-start">
+      <Link to="/"> <p className=" uppercase text-white text-2xl font-semibold">Africa Global</p></Link>
+       <small className=" text-base tracking-widest">Logistics</small>
+      </div>
         <button className=" stroke-white" onClick={toggleNavbar}>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 stroke-white h-7">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -82,6 +85,7 @@ const navSections = (
                 {/* <img src={logo} className=" hidden md:block shadow-md h-16 rounded-full w-16" alt="" /> */}
                <Link to={`/`}>
                 <p className=" uppercase dark:text-white font-bold text-2xl">Africa Global</p>
+                <small className=" tracking-widest text-base">logistics</small>
                </Link>
             </div>
             <ul className="hidden md:flex flex-row  space-x-12">
