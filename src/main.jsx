@@ -9,6 +9,7 @@ import AIrCargo from './pages/AirCargo'
 import Home from './pages/Home'
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './scrollToTop'
 
 
 
@@ -16,6 +17,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />

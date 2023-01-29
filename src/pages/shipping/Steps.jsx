@@ -55,10 +55,10 @@ const Steps = ( { bannerImg } ) => {
             <img src={bannerImg} alt="" className=' rounded-md h-[300px] w-full object-cover' srcSet="" />
           </div>
           <div className="flex flex-col space-y-3 my-auto">
-            <p className=' text-xl text-sky-900 md:text-3xl font-banner font-bold'>Your Shipping Partner</p>
+            <p className=' text-xl text-sky-900 dark:text-sky-100 md:text-3xl font-banner font-bold'>Your Shipping Partner</p>
             <p className='text-xl md:text-2xl'>We are comitted to providing fast and efficient shipping services to all our customers in the best way possible </p>
             <div className=" flex items-start py-2">
-            <a href="tel:+0905393809466" className='text-lg text-white items-center space-x-3 px-3 py-2 rounded-md bg-sky-500  flex'>
+            <a href="tel:+0905393809466" className='text-lg text-white dark:bg-black items-center space-x-3 px-3 py-2 rounded-md bg-sky-500  flex'>
               {step[0].icon}
               <div className="">Talk To Someone</div>
               </a>
@@ -70,17 +70,17 @@ const Steps = ( { bannerImg } ) => {
       </div>
 
       <div className=" mb-6">
-      <p className=' text-sky-900 text-xl font-bold font-banner'>The Shipment Steps</p>
+      <p className=' text-sky-900 dark:text-sky-100 text-xl font-bold font-banner'>The Shipment Steps</p>
       <div className=" py-6 grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
        {
         step.map( (em) => {
           return (
-            <div key={em.id} className=" px-6 flex flex-col py-4 bg-white shadow-lg shadow-gray-600/10 rounded-lg space-y-3 ">
+            <div key={em.id} className=" px-6 flex flex-col py-4 dark:bg-black bg-white shadow-lg shadow-gray-600/10 rounded-lg space-y-3 ">
               <div className=" flex place-items-end space-x-2">
                <div className=" p-2 bg-sky-500 rounded-lg">
                {em.icon}
                </div>
-                <small className=' text-sky-900 text-lg font-banner '>Step {em.id}</small>
+                <small className=' text-sky-900 text-lg dark:text-sky-100 font-banner '>Step {em.id}</small>
               </div>
               <p className="">{em.title} </p>
             </div>
