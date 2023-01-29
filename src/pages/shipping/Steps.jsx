@@ -51,16 +51,15 @@ const Steps = () => {
   return (
       <>
      <div className=" flex flex-col dark:text-white  text-gray-900 items-center space-y-6">
-      <h3 className=' text-2xl my-3'>Moving products in containers </h3>
-     <div className="grid gap-x-6 py-6 grid-cols-2">
+     <div className="grid gap-x-6 py-6 grid-cols-1 gap-y-6 md:gap-y-0 md:grid-cols-2">
           <div className="">
             <img src={bannerImg} alt="" className=' rounded-md' srcSet="" />
           </div>
           <div className="flex flex-col space-y-3 my-auto">
-            <p className='text-3xl font-main font-bold'>Your Shipping Partner </p>
-            <p className='text-2xl'>We are comitted to providing fast and efficient shipping services to all our customers in the best way possible </p>
+            <p className=' text-xl text-sky-900 md:text-3xl font-banner font-bold'>Your Shipping Partner</p>
+            <p className='text-xl md:text-2xl'>We are comitted to providing fast and efficient shipping services to all our customers in the best way possible </p>
             <div className=" flex items-start py-2">
-            <a href="tel:+" className=' text-xl px-3 py-2 rounded-md bg-sky-500  flex'>Get started</a>
+            <a href="tel:+" className='text-xl px-3 py-2 rounded-md bg-sky-500  flex'>Talk To Someone</a>
             </div>
            
           </div>
@@ -68,9 +67,9 @@ const Steps = () => {
          
       </div>
 
-      <div className="">
-      <p>The Shipment Steps</p>
-      <div className=" py-6 my-6 grid w-full grid-cols-4 gap-4">
+      <div className=" mb-6">
+      <p className=' text-sky-900 text-xl font-bold font-banner'>The Shipment Steps</p>
+      <div className=" py-6 grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
        {
         step.map( (em) => {
           return (
