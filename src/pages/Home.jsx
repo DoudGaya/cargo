@@ -7,6 +7,7 @@ import Partners from './home/Partners'
 import Newsletter from "./home/Newsletter";
 import Gallery from "./home/Gallery";
 import AboutTheCompany from "./about/AbousTheCompany";
+import Logo from "./home/Logo";
 
 const Home = () => {
 
@@ -15,6 +16,7 @@ const Home = () => {
            <div className="flex flex-col w-full ">
             <Banner />
             <Partners />
+            <Logo />
             <AboutTheCompany />
             <ShowCase />
             <Company />

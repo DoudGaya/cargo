@@ -20,7 +20,7 @@ const Steps = ( { bannerImg } ) => {
       </svg>
 
       ),
-      title: 'Get your package to one our office',
+      title: 'Get your package to one of our offices',
       
     },
 
