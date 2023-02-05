@@ -11,7 +11,7 @@ const Founder = ( { staffs } ) => {
             <img src={staffs.image} className=' h-[250px] rounded-full object-cover w-[250px]' alt="" />
             <div className=" flex justify-center flex-col items-center">
                 <p className=' font-semibold text items-center justify-center-sm group-hover:text-white'>{staffs.designation}</p>
-                <p className='group-hover:text-white text-lg'>{staffs.name}</p>
+                <p className='group-hover:text-white text-center text-lg'>{ staffs.name}</p>
 
             </div>
             </div>
