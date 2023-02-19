@@ -74,8 +74,8 @@ const navSections = (
         <>
         <div className=" bg-gray-800/50 text-white flex-col z-20 fixed top-0 flex justify-between w-full dark:bg-black dark:text-white">
             { nav ? navSections : ''}
-        <div className="flex justify-between w-full px-10 py-6 md:py-3 md:px-0 md:w-10/12 md:mx-auto ">
-            <div className="py-2 flex items-center md:space-x-4">
+        <div className="flex justify-between w-full px-10 py-6 md:py-2 md:px-0 md:w-10/12 md:mx-auto ">
+            <div className=" flex items-center md:space-x-4">
                <Link to={`/`} className=" space-y-0 flex flex-col">
                <img src={ag} alt="" className=" h-14 rounded-lg" srcSet="" />
                </Link>

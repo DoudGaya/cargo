@@ -3,6 +3,7 @@ import coFounder from '../../assets/imgs/md.jpeg'
 import banner from '../../assets/imgs/banner6.jpg'
 
 
+
 const Founder = ( { staffs } ) => {
 
     return (
