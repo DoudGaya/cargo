@@ -1,9 +1,13 @@
 
 import React, { useState }  from 'react';
 
-function ImageCarousel (props) {
+function ImageCarousel ({banner}) {
   // Set state with array containing images
-  const [images, setImages] = useState(props.images);
+
+  console.log(banner)
+
+
+  const [images, setImages] = useState(banner);
 
   const [index, setIndex] = useState(0);
 
@@ -27,11 +31,14 @@ function ImageCarousel (props) {
      }
   };
 
+
+  console.log(images[index])
+
   return ( 
-    <div>
-      <button onClick={nextImage}>Next</button>
-      <button onClick={previousImage}>Previous</button>
-      <img src={images[index].src} width={200} />
+    <div className='w-full h-full saturate-50 bg-cover bg-center flex bg-no-repeat bg-fixed bg-transparent transition-all duration-200 ease-in-out delay-200' style={{ backgroundImage: `url(${images[index].src})`}} >
+      <button className=' bg-[rgb(24,135,62)] absolute z-50 top-[50%] left-0 px-10 py-2' onClick={nextImage}>Next</button>
+      <button className=' bg-[rgb(24,135,62)] absolute z-50 top-[50%] right-0 px-10 py-2' onClick={previousImage}>Previous</button>
+      {/* <img src={images[index].src} width={200} /> */}
     </div>
   );
 }

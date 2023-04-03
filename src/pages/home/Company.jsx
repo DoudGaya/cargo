@@ -51,7 +51,7 @@ const Company = () => {
                     </div>
                 </div>
                 <div className=" col-span-1 md:px-4">
-                    <div className=" bg-sky-700 px-6 py-20">
+                    <div className=" rgb(24,135,62) px-6 py-20">
                         <h3 className=' text-2xl uppercase font-bold text-orange-500 my-3'>About Us</h3>
                         <p className=' text-white'>
                             Africa Global is a leading logistics and freight forwarding company that offers customized solutions to its customers in Africa, with a focus on providing cost-effective services. The company has established reliable transportation routes to various African countries, especially Nigeria, and has a strong reputation as a trusted service provider. Africa Global works closely with its clients to understand their specific needs and develop comprehensive service plans to meet those requirements.

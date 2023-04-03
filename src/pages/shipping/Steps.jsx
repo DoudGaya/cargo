@@ -58,7 +58,7 @@ const Steps = ( { bannerImg } ) => {
             <p className=' text-xl text-sky-900 dark:text-sky-100 md:text-3xl font-banner font-bold'>Your Shipping Partner</p>
             <p className='text-xl md:text-2xl'>We are comitted to providing fast and efficient shipping services to all our customers in the best way possible </p>
             <div className=" flex items-start py-2">
-            <a href="tel:+0905393809466" className='text-lg text-white dark:bg-black items-center space-x-3 px-3 py-2 rounded-md bg-sky-500  flex'>
+            <a href="tel:+905393809466" className='text-lg text-white dark:bg-black items-center space-x-3 px-3 py-2 rounded-md bg-sky-500  flex'>
               {step[0].icon}
               <div className="">Talk To Someone</div>
               </a>
